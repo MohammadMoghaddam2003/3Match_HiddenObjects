@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,27 +6,38 @@ public class GameplayController : MonoBehaviour, IGameplayController
 {
     [SerializeField] private Transform gatheringPos;
     [SerializeField] private Transform[] starsPos;
-    [SerializeField] private List<SelectedItemPlace> selectedItemPlace = new List<SelectedItemPlace>();
+    [SerializeField] private List<Transform> selectedItemPlace = new List<Transform>();
     [SerializeField] private int maxStarsCount = 9; 
     
     
-    private List<string> _selectedItems = new List<string>();
+    private List<ItemController> _selectedItemScript = new List<ItemController>();
+
+    private static string _collectableItem;
     private int _selectedItemsCount;
     private int _starsCount;
 
 
-    public void SelectedItem(Transform item)
+    public void SelectedItem(ItemController itemScript, out  bool result)
     {
-        AddItemTag(item.tag);
-        SetMoveItem(item.GetComponent<ItemController>());
-        SelectedItemsController();
+        _collectableItem = _collectableItem ?? itemScript.tag;
+       
+
+        if (!itemScript.CompareTag(_collectableItem))
+        {
+            result = false;
+            return;
+        }
+
+
+        AddItemTag(itemScript);
+        SetMoveItem(itemScript);
+        result = true;
     }
 
 
-    public void RemoveItem(string itemTag)
+    public void RemoveItem(ItemController itemScript)
     {
-        _selectedItemsCount--;
-        _selectedItems.Remove(itemTag);
+       ClearSelectHistory();
     }
 
 
@@ -40,48 +52,48 @@ public class GameplayController : MonoBehaviour, IGameplayController
 
 
 
-    private void AddItemTag(string itemTag)
+    private void AddItemTag(ItemController itemScript)
     {
         _selectedItemsCount++;
-        _selectedItems.Add(itemTag);
+        _selectedItemScript.Add(itemScript);
     }
 
     
     private void SetMoveItem(ItemController itemController)
     {
-        for (int i = 0; i < selectedItemPlace.Count; i++)
-        {
-            if (!selectedItemPlace[i].Used)
-            {
-                itemController.Move(selectedItemPlace[i].GetPos);
-                return;
-            }
-        }
+        itemController.Move(selectedItemPlace[_selectedItemsCount - 1].position); 
     }
     
     
-    private void SelectedItemsController()
+    public IEnumerator SelectedItemsController()
     {
         if(_selectedItemsCount == 3)
         {
             if (ValidationChecker())
             {
-                // Start the move enumerator of items and get the "gatheringPos" to they parameter
-
-                for (int i = 0; i < _selectedItems.Count; i++)
+                yield return new WaitForSeconds(.25f);
+                for (int i = 0; i < _selectedItemScript.Count; i++)
                 {
+                    _selectedItemScript[i].SetCollectedAll = true;
+                    _selectedItemScript[i].Move(gatheringPos.position);
                 }
-            }
-            else
-            {
-                // Call the level controller "Lose" method
+
+                ClearSelectHistory();
             }
         }
         
     }
+
+
+    private void ClearSelectHistory()
+    {
+        _selectedItemScript.Clear();
+        _selectedItemsCount = 0;
+        _collectableItem = null;
+    }
     
 
-    private bool ValidationChecker() => ((_selectedItems[0] == _selectedItems[1]) && _selectedItems[1] == _selectedItems[2]);
+    private bool ValidationChecker() => ((_selectedItemScript[0].CompareTag(_selectedItemScript[1].tag)) && _selectedItemScript[1].CompareTag(_selectedItemScript[2].tag));
     
     
     

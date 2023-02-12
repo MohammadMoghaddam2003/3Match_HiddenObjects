@@ -46,5 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gatheringPos: {fileID: 0}
   starsPos: []
-  selectedItemPlace: []
+  selectedItemPlace:
+  - pos: {fileID: 0}
+  - pos: {fileID: 0}
+  - pos: {fileID: 0}
   maxStarsCount: 9

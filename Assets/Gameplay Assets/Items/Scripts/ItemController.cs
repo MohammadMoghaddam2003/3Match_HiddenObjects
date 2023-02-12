@@ -1,10 +1,9 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
+
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
 public class ItemController : MonoBehaviour, IItemController
 {
     [SerializeField] private Quaternion defaultRotation;
@@ -31,6 +30,7 @@ public class ItemController : MonoBehaviour, IItemController
     private float _time;
 
     private bool _isSelected;
+    private bool _collectedAll;
 
 
     private void Awake()
@@ -60,7 +60,8 @@ public class ItemController : MonoBehaviour, IItemController
     private void OnMouseDrag()
     {
         _time += Time.fixedDeltaTime;
-        if(_time < 2) return;
+        
+        if(_time < 1f || _isSelected) return;
         
         RemoveGravity();
         FingerMoving();
@@ -87,30 +88,32 @@ public class ItemController : MonoBehaviour, IItemController
 
     private void Select()
     {
+        if(_collectedAll) return;
+        
+        
         if (!_isSelected)
         {
-            _isSelected = true;
-            gameplayController.SelectedItem(transform);
+            gameplayController.SelectedItem(this, out  _isSelected);
         }
         else
         {
-            BackToScene();
+            _isSelected = false;
+            BackFromBasket();
         }
     }
 
 
-    private void BackToScene()
+    private void BackFromBasket()
     {
-        gameplayController.RemoveItem(transform.tag);
+        gameplayController.RemoveItem(this);
         UnfreezeRigidbodyConstraints();
         ApplyGravity();
-        print(_backToSceneForce);
-        _rigidbody.AddForce(transform.forward * _backToSceneForce);
+        _rigidbody.AddForce(-transform.forward * _backToSceneForce);
     }
 
     private IEnumerator MoveToTargetPos(Vector3 target)
-    {
-        StartCoroutine(ResetRotation());
+    {        
+        StartCoroutine(ResetChildRotation());
 
         
         while (Vector3.Distance(transform.position , target) > .15f)
@@ -118,13 +121,19 @@ public class ItemController : MonoBehaviour, IItemController
             transform.position = Vector3.Lerp(transform.position, target, _moveSpeed * Time.fixedDeltaTime);
             yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
-
+        
         transform.position = target;
         FreezeRigidbodyConstraints();
+        ResetThisObjectRotation();
         StopCoroutine(MoveToTargetPos(target));
-    }
 
-    private IEnumerator ResetRotation()
+        
+        if (_collectedAll) gameObject.SetActive(false);
+        else NotifierItemArrive();
+    }
+    
+
+    private IEnumerator ResetChildRotation()
     {
         _rigidbody.useGravity = false;
         
@@ -139,11 +148,16 @@ public class ItemController : MonoBehaviour, IItemController
             
             _childObject.rotation = Quaternion.Lerp(_childObject.rotation,defaultRotation,_resetRotationSpeed * Time.deltaTime);
             yield return new WaitForSeconds(Time.fixedDeltaTime);
-
-           
         }
 
-        StopCoroutine(ResetRotation());
+        StopCoroutine(ResetChildRotation());
+    }
+
+
+    private void ResetThisObjectRotation()
+    {
+        transform.rotation = Quaternion.Euler(Vector3.zero);
+        StartCoroutine(ResetChildRotation());
     }
     
     private IEnumerator Rotate(Transform rotatingObject)
@@ -156,6 +170,10 @@ public class ItemController : MonoBehaviour, IItemController
     }
 
 
+    private void NotifierItemArrive()
+    {
+        StartCoroutine(gameplayController.SelectedItemsController());
+    }
 
     private void FreezeRigidbodyConstraints()
     {
@@ -209,7 +227,9 @@ public class ItemController : MonoBehaviour, IItemController
     
     public void Move(Vector3 target)
     {
+        StopAllCoroutines();
         StartCoroutine(MoveToTargetPos(target));
     }
-}
 
+    public bool SetCollectedAll { set => _collectedAll = value; }
+}

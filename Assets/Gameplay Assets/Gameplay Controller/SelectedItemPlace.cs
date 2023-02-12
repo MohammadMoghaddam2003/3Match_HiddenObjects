@@ -2,11 +2,18 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public struct SelectedItemPlace
+public class SelectedItemPlace
 {
     [SerializeField] private Transform pos;
 
-    [HideInInspector] public bool Used;
+    
+    private bool _used;
 
     public Vector3 GetPos { get => pos.position; }
+    public Transform GetParent { get => pos.parent; }
+
+    public bool GetUsed { get => _used; }
+
+    public void SetUsedTrue() { _used = true; }
+    public void SetUsedFalse() => _used = false;
 }

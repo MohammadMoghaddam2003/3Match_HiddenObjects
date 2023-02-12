@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IGameplayController
 {
-    public void SelectedItem(Transform item);
-    public void RemoveItem(string itemTag);
+    public void SelectedItem(ItemController itemScript, out bool result);
+    public void RemoveItem(ItemController itemScript);
     public void AddStar();
 }
