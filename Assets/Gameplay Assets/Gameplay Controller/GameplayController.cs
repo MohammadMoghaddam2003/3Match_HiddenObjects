@@ -1,30 +1,35 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameplayController : MonoBehaviour, IGameplayController
 {
+
+    #region Required Variables
+
     [SerializeField] private Transform gatheringPos;
     [SerializeField] private Transform[] starsPos;
     [SerializeField] private ParticleSystem collectParticleSystem;
     [SerializeField] private List<Transform> selectedItemPlace = new List<Transform>();
-    [SerializeField] private int maxStarsCount = 9; 
-    
-    
-    private List<ItemController> _selectedItemScript = new List<ItemController>();
+    [SerializeField] private int maxStarsCount = 9;
 
+    #endregion
+  
+
+    #region Private Fields
+
+    private readonly List<ItemController> _selectedItemScript = new List<ItemController>();
     private static string _collectableItem;
     private int _selectedItemsCount;
     private int _starsCount;
     private int _collectParticleManage;
 
+    #endregion
 
-    private void Start()
-    {
-        collectParticleSystem = Instantiate(collectParticleSystem, gatheringPos.position, Quaternion.identity);
-    }
 
+
+
+    #region Public Methods
 
     public void SelectedItem(ItemController itemScript, out  bool result)
     {
@@ -39,17 +44,18 @@ public class GameplayController : MonoBehaviour, IGameplayController
 
 
         AddItemTag(itemScript);
-        SetMoveItem(itemScript);
+        MoveToBasket(itemScript);
         result = true;
     }
 
-
+    
+    // This method and called method inside this have a bug
     public void RemoveItem(ItemController itemScript)
     {
-       ClearSelectHistory();
+        ClearSelectHistory();
     }
-
-
+    
+    
     public void AddStar()
     {
         _starsCount++;
@@ -59,20 +65,6 @@ public class GameplayController : MonoBehaviour, IGameplayController
         WinController();
     }
 
-
-
-    private void AddItemTag(ItemController itemScript)
-    {
-        _selectedItemsCount++;
-        _selectedItemScript.Add(itemScript);
-    }
-
-    
-    private void SetMoveItem(ItemController itemController)
-    {
-        itemController.Move(selectedItemPlace[_selectedItemsCount - 1].position); 
-    }
-    
     
     public IEnumerator SelectedItemsController()
     {
@@ -84,7 +76,7 @@ public class GameplayController : MonoBehaviour, IGameplayController
                 for (int i = 0; i < _selectedItemScript.Count; i++)
                 {
                     _selectedItemScript[i].SetCollectedAll = true;
-                    _selectedItemScript[i].Move(gatheringPos.position);
+                    MoveToGatheringPos(_selectedItemScript[i]);
                 }
 
                 ClearSelectHistory();
@@ -92,7 +84,47 @@ public class GameplayController : MonoBehaviour, IGameplayController
         }
         
     }
+    
+    
+    public void PlayCollectParticleManager()
+    {
+        _collectParticleManage++;
+        
+        if(_collectParticleManage < 3) return;
 
+        _collectParticleManage = 0;
+        PlayCollectParticle();
+    }
+
+    
+    #endregion
+    
+
+    #region Utilities
+    
+    
+
+    private void Start()
+    {
+        collectParticleSystem = Instantiate(collectParticleSystem, gatheringPos.position, Quaternion.identity);
+    }
+    
+    
+    private void AddItemTag(ItemController itemScript)
+    {
+        _selectedItemsCount++;
+        _selectedItemScript.Add(itemScript);
+    }
+    
+    
+    private void SetMoveItem(ItemController itemController, Vector3 target) => itemController.Move(target); 
+    
+    
+    private void MoveToBasket(ItemController itemController) => SetMoveItem(itemController,selectedItemPlace[_selectedItemsCount - 1].position);
+    
+    
+    private void MoveToGatheringPos(ItemController itemController) => SetMoveItem(itemController,gatheringPos.position);
+    
 
     private void ClearSelectHistory()
     {
@@ -100,10 +132,6 @@ public class GameplayController : MonoBehaviour, IGameplayController
         _selectedItemsCount = 0;
         _collectableItem = null;
     }
-    
-
-    private bool ValidationChecker() => ((_selectedItemScript[0].CompareTag(_selectedItemScript[1].tag)) && _selectedItemScript[1].CompareTag(_selectedItemScript[2].tag));
-    
     
     
     private void WinController()
@@ -113,16 +141,19 @@ public class GameplayController : MonoBehaviour, IGameplayController
             // Call the level controller "Win" method
         }
     }
+    
 
+    private void PlayCollectParticle() => collectParticleSystem.Play();
+    
+    
     private bool WinChecker() => _starsCount == maxStarsCount;
+    
+    
+    private bool ValidationChecker() => ((_selectedItemScript[0].CompareTag(_selectedItemScript[1].tag)) && _selectedItemScript[1].CompareTag(_selectedItemScript[2].tag));
+    
+    
+    
 
-    public void PlayCollectParticle()
-    {
-        _collectParticleManage++;
-        
-        if(_collectParticleManage < 3) return;
-
-        _collectParticleManage = 0;
-        collectParticleSystem.Play();
-    }
+    #endregion
+    
 }
