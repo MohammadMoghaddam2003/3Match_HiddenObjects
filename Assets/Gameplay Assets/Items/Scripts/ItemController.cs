@@ -128,8 +128,7 @@ public class ItemController : MonoBehaviour, IItemController
         StopCoroutine(MoveToTargetPos(target));
 
         
-        if (_collectedAll) gameObject.SetActive(false);
-        else NotifierItemArrive();
+        if (!_collectedAll) NotifierItemArrive();
     }
     
 
@@ -232,4 +231,17 @@ public class ItemController : MonoBehaviour, IItemController
     }
 
     public bool SetCollectedAll { set => _collectedAll = value; }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.CompareTag(transform.tag) && _collectedAll) StartCoroutine(DestroyManage());
+    }
+
+    private IEnumerator DestroyManage()
+    {
+        transform.localScale *= 1.05f;
+        yield return new WaitForSeconds(.2f);
+        gameObject.SetActive(false);
+    }
 }
