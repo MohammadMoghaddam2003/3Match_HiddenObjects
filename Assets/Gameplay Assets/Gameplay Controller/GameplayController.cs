@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ public class GameplayController : MonoBehaviour, IGameplayController
 {
     [SerializeField] private Transform gatheringPos;
     [SerializeField] private Transform[] starsPos;
+    [SerializeField] private ParticleSystem collectParticleSystem;
     [SerializeField] private List<Transform> selectedItemPlace = new List<Transform>();
     [SerializeField] private int maxStarsCount = 9; 
     
@@ -15,6 +17,13 @@ public class GameplayController : MonoBehaviour, IGameplayController
     private static string _collectableItem;
     private int _selectedItemsCount;
     private int _starsCount;
+    private int _collectParticleManage;
+
+
+    private void Start()
+    {
+        collectParticleSystem = Instantiate(collectParticleSystem, gatheringPos.position, Quaternion.identity);
+    }
 
 
     public void SelectedItem(ItemController itemScript, out  bool result)
@@ -106,4 +115,14 @@ public class GameplayController : MonoBehaviour, IGameplayController
     }
 
     private bool WinChecker() => _starsCount == maxStarsCount;
+
+    public void PlayCollectParticle()
+    {
+        _collectParticleManage++;
+        
+        if(_collectParticleManage < 3) return;
+
+        _collectParticleManage = 0;
+        collectParticleSystem.Play();
+    }
 }

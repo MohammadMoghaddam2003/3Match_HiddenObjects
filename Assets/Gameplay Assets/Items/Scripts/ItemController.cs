@@ -241,6 +241,7 @@ public class ItemController : MonoBehaviour, IItemController
     private IEnumerator DestroyManage()
     {
         transform.localScale *= 1.05f;
+        gameplayController.PlayCollectParticle();
         yield return new WaitForSeconds(.2f);
         gameObject.SetActive(false);
     }
