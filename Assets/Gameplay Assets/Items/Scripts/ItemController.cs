@@ -61,7 +61,7 @@ public class ItemController : MonoBehaviour, IItemController
     {
         _time += Time.fixedDeltaTime;
         
-        if(_time < 1f || _isSelected) return;
+        if(_time < .4f || _isSelected) return;
         
         RemoveGravity();
         FingerMoving();
@@ -71,7 +71,7 @@ public class ItemController : MonoBehaviour, IItemController
 
     private void OnMouseUp()
     {
-        if (_time < 2) Select();
+        if (_time < .4f) Select();
         else EndDrag();
 
         _time = 0;
