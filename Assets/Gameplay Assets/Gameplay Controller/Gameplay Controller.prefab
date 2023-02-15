@@ -47,8 +47,8 @@ MonoBehaviour:
   gatheringPos: {fileID: 0}
   starsPos: []
   collectParticleSystem: {fileID: 0}
-  selectedItemPlace:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  baskets:
+  - pos: {fileID: 0}
+  - pos: {fileID: 0}
+  - pos: {fileID: 0}
   maxStarsCount: 9

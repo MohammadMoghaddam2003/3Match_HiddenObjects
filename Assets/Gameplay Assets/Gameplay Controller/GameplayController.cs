@@ -10,7 +10,7 @@ public class GameplayController : MonoBehaviour, IGameplayController
     [SerializeField] private Transform gatheringPos;
     [SerializeField] private Transform[] starsPos;
     [SerializeField] private ParticleSystem collectParticleSystem;
-    [SerializeField] private List<Transform> selectedItemPlace = new List<Transform>();
+    [SerializeField] private Baskets[] baskets;
     [SerializeField] private int maxStarsCount = 9;
 
     #endregion
@@ -43,15 +43,25 @@ public class GameplayController : MonoBehaviour, IGameplayController
         }
 
 
-        AddItemTag(itemScript);
+        AddItem(itemScript);
         MoveToBasket(itemScript);
+        SetItemBasket(itemScript,baskets[_selectedItemsCount - 1].GetParent);
+
         result = true;
     }
 
     
-    // This method and called method inside this have a bug
-    public void RemoveItem(ItemController itemScript)
+    public void RemoveItem(ItemController itemScript, Transform basket)
     {
+        if (_selectedItemsCount > 1)
+        {
+            _selectedItemsCount--;
+            BasketManager(itemScript,0 ,true);
+            _selectedItemScript.Remove(itemScript);
+            return;
+        }
+        
+        
         ClearSelectHistory();
     }
     
@@ -63,6 +73,17 @@ public class GameplayController : MonoBehaviour, IGameplayController
         // Get star from pooling object and get a pos to this parameter
 
         WinController();
+    }
+
+    
+    public void PlayCollectParticleManager()
+    {
+        _collectParticleManage++;
+        
+        if(_collectParticleManage < 3) return;
+
+        _collectParticleManage = 0;
+        PlayCollectParticle();
     }
 
     
@@ -86,16 +107,6 @@ public class GameplayController : MonoBehaviour, IGameplayController
     }
     
     
-    public void PlayCollectParticleManager()
-    {
-        _collectParticleManage++;
-        
-        if(_collectParticleManage < 3) return;
-
-        _collectParticleManage = 0;
-        PlayCollectParticle();
-    }
-
     
     #endregion
     
@@ -110,30 +121,78 @@ public class GameplayController : MonoBehaviour, IGameplayController
     }
     
     
-    private void AddItemTag(ItemController itemScript)
+    private void AddItem(ItemController itemScript)
     {
         _selectedItemsCount++;
         _selectedItemScript.Add(itemScript);
     }
     
     
-    private void SetMoveItem(ItemController itemController, Vector3 target) => itemController.Move(target); 
-    
-    
-    private void MoveToBasket(ItemController itemController) => SetMoveItem(itemController,selectedItemPlace[_selectedItemsCount - 1].position);
-    
-    
+    private void SetMoveItem(ItemController itemController, Vector3 target) => itemController.Move(target);
+
+
+    private void MoveToBasket(ItemController itemController)
+    {
+        for (int i = 0; i < baskets.Length; i++)
+        {
+            if (!baskets[i].GetUsed)
+            {
+                SetMoveItem(itemController, baskets[i].GetPos);
+                BasketManager(itemController, i);
+                break;
+            }
+        }
+    }
+
+
     private void MoveToGatheringPos(ItemController itemController) => SetMoveItem(itemController,gatheringPos.position);
+
+
+    private void BasketManager(ItemController itemController, int indexBasket = 0, bool isRemove = false)
+    {
+        if (isRemove)
+        {
+            for (int i = 0; i < baskets.Length; i++)
+            {
+                if(itemController.Basket == baskets[i].GetParent) SetBasketDontUsing(baskets[i]);
+            }
+
+            return;
+        }
+        
+        SetBasketUsing(baskets[indexBasket]);
+    }
     
+
+    private void SetItemBasket(ItemController itemController, Transform basket) => itemController.Basket = basket;
+    
+    
+    private void SetBasketDontUsing(Baskets basket) => basket.SetUsedFalse();
+
+
+    private void SetBasketUsing(Baskets basket) => basket.SetUsedTrue();
+    
+
 
     private void ClearSelectHistory()
     {
         _selectedItemScript.Clear();
         _selectedItemsCount = 0;
         _collectableItem = null;
+        
+        ClearBasketUsing();
     }
-    
-    
+
+
+    private void ClearBasketUsing()
+    {
+        for (int i = 0; i < baskets.Length; i++)
+        {
+            baskets[i].SetUsedFalse();
+        }
+    }
+
+
     private void WinController()
     {
         if (WinChecker())

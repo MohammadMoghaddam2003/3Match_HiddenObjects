@@ -1438,17 +1438,22 @@ PrefabInstance:
       objectReference: {fileID: 2074199457}
     - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
         type: 3}
-      propertyPath: selectedItemPlace.Array.data[0]
+      propertyPath: collectParticleSystem
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
+        type: 3}
+      propertyPath: baskets.Array.data[0].pos
       value: 
       objectReference: {fileID: 1320491510}
     - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
         type: 3}
-      propertyPath: selectedItemPlace.Array.data[1]
+      propertyPath: baskets.Array.data[1].pos
       value: 
       objectReference: {fileID: 856434990}
     - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
         type: 3}
-      propertyPath: selectedItemPlace.Array.data[2]
+      propertyPath: baskets.Array.data[2].pos
       value: 
       objectReference: {fileID: 947830562}
     m_RemovedComponents: []

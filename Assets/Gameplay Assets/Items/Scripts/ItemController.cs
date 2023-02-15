@@ -105,7 +105,8 @@ public class ItemController : MonoBehaviour, IItemController
 
     private void BackFromBasket()
     {
-        gameplayController.RemoveItem(this);
+        gameplayController.RemoveItem(this,Basket);
+        Basket = null;
         UnfreezeRigidbodyConstraints();
         ApplyGravity();
         _rigidbody.AddForce(-transform.forward * _backToSceneForce);
@@ -245,4 +246,7 @@ public class ItemController : MonoBehaviour, IItemController
         yield return new WaitForSeconds(.2f);
         gameObject.SetActive(false);
     }
+
+
+    public Transform Basket { get; set; }
 }
