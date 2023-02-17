@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -19,6 +20,7 @@ public class ItemController : MonoBehaviour, IItemController
     private Transform _childObject;
 
     private Vector3 _pos;
+    private Vector3 _mouseBeginPos;
     private Vector3 _rotateDirection;
 
     private float _height;
@@ -27,10 +29,10 @@ public class ItemController : MonoBehaviour, IItemController
     private float _rotateSpeed;
     private float _resetRotationSpeed;
     private float _backToSceneForce;
-    private float _time;
 
     private bool _isSelected;
     private bool _collectedAll;
+    private bool _drag;
 
 
     private void Awake()
@@ -57,24 +59,26 @@ public class ItemController : MonoBehaviour, IItemController
         _childObject = transform.GetChild(0);
     }
 
+
+    private void OnMouseDown() => _mouseBeginPos = Input.mousePosition;
+    
+
+
     private void OnMouseDrag()
     {
-        _time += Time.fixedDeltaTime;
-        
-        if(_time < .4f || _isSelected) return;
+        if(Vector3.Distance(Input.mousePosition,_mouseBeginPos) < .3f) return;
         
         RemoveGravity();
         FingerMoving();
-       
+
+        if (!_drag) _drag = true;
         if (_rotateCoroutine == null) _rotateCoroutine = StartCoroutine(Rotate(transform.GetChild(0)));
     }
 
     private void OnMouseUp()
     {
-        if (_time < .4f) Select();
+        if (Vector3.Distance(Input.mousePosition,_mouseBeginPos) < .3f && !_drag) Select();
         else EndDrag();
-
-        _time = 0;
     }
 
 
@@ -83,6 +87,7 @@ public class ItemController : MonoBehaviour, IItemController
         ApplyGravity();
         if(_rotateCoroutine is not null) StopCoroutine(_rotateCoroutine);
         _rotateCoroutine = null;
+        _drag = false;
     }
 
 
