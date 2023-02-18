@@ -190,17 +190,15 @@ public class ItemController : MonoBehaviour, IItemController
     {
         _rigidbody.constraints = RigidbodyConstraints.None;
     }
-    
-    
+
+
     private void FingerMoving()
     {
-        if (Vector3.Distance(transform.position, CalculateFingerMoveDirection()) <= .1f) return;
+        Vector3 position = transform.position;
         
-
-        transform.position = 
-                Vector3.Lerp(transform.position, CalculateFingerMoveDirection(), _fingerMoveSpeed * Time.fixedDeltaTime);
+        _fingerMoveSpeed *= Mathf.Abs((CalculateFingerMoveDirection() - position).normalized.magnitude);
+        _rigidbody.velocity = (CalculateFingerMoveDirection() - position) * (_fingerMoveSpeed * Time.fixedDeltaTime);
     }
-
 
 
     private void RemoveGravity()

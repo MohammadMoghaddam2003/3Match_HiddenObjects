@@ -15,7 +15,7 @@ MonoBehaviour:
   rotateDirection: {x: 0, y: 1, z: 0}
   height: 1
   moveSpeed: 8
-  fingerMoveSpeed: 1
+  fingerMoveSpeed: 90
   rotateSpeed: 20
   resetRotationSpeed: 2.5
   backToSceneForce: 300
