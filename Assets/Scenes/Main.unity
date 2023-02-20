@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 1410937832}
   - component: {fileID: 1410937834}
   - component: {fileID: 1410937833}
+  - component: {fileID: 1410937835}
   m_Layer: 0
   m_Name: SM_Icon_AmericanFootball_01
   m_TagString: Untagged
@@ -627,6 +628,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410937831}
   m_Mesh: {fileID: 4300000, guid: f6f38497487501f4cb32b206dd8716dd, type: 3}
+--- !u!65 &1410937835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410937831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.317583, y: 0.32035983, z: 0.080000035}
+  m_Center: {x: -0.00205566, y: 0.00074277073, z: 0}
 --- !u!1 &1425383063
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +652,7 @@ GameObject:
   - component: {fileID: 1425383064}
   - component: {fileID: 1425383066}
   - component: {fileID: 1425383065}
+  - component: {fileID: 1425383067}
   m_Layer: 0
   m_Name: SM_Icon_Ammo_01
   m_TagString: Untagged
@@ -710,6 +725,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425383063}
   m_Mesh: {fileID: 4300000, guid: f6e1de10ab0470441b4f5d53dadd206e, type: 3}
+--- !u!65 &1425383067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425383063}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.30866122, y: 0.3400195, z: 0.07980548}
+  m_Center: {x: -0.0031018779, y: -0.0059842467, z: -0.00083396025}
 --- !u!1 &1462288049
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +828,7 @@ GameObject:
   - component: {fileID: 1562034454}
   - component: {fileID: 1562034456}
   - component: {fileID: 1562034455}
+  - component: {fileID: 1562034457}
   m_Layer: 0
   m_Name: SM_Icon_Ammo_01
   m_TagString: Untagged
@@ -872,6 +901,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562034453}
   m_Mesh: {fileID: 4300000, guid: f6e1de10ab0470441b4f5d53dadd206e, type: 3}
+--- !u!65 &1562034457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562034453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.30866122, y: 0.3400195, z: 0.07980548}
+  m_Center: {x: -0.0031018779, y: -0.0059842467, z: -0.00083396025}
 --- !u!1 &1675199947
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +925,7 @@ GameObject:
   - component: {fileID: 1675199948}
   - component: {fileID: 1675199950}
   - component: {fileID: 1675199949}
+  - component: {fileID: 1675199951}
   m_Layer: 0
   m_Name: SM_Icon_AmericanFootball_01
   m_TagString: Untagged
@@ -955,6 +998,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675199947}
   m_Mesh: {fileID: 4300000, guid: f6f38497487501f4cb32b206dd8716dd, type: 3}
+--- !u!65 &1675199951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675199947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.317583, y: 0.32035983, z: 0.080000035}
+  m_Center: {x: -0.00205566, y: 0.00074277073, z: 0}
 --- !u!1 &1954165860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1265,7 @@ GameObject:
   - component: {fileID: 4812796966171197}
   - component: {fileID: 33751961300355491}
   - component: {fileID: 23036641491012663}
+  - component: {fileID: 33751961300355492}
   m_Layer: 0
   m_Name: SM_Icon_AmericanFootball_01
   m_TagString: Untagged
@@ -1227,6 +1284,7 @@ GameObject:
   - component: {fileID: 4297007698139738}
   - component: {fileID: 33934513521047336}
   - component: {fileID: 23206304335574130}
+  - component: {fileID: 33934513521047337}
   m_Layer: 0
   m_Name: SM_Icon_Ammo_01
   m_TagString: Untagged
@@ -1356,6 +1414,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622242313447933}
   m_Mesh: {fileID: 4300000, guid: f6f38497487501f4cb32b206dd8716dd, type: 3}
+--- !u!65 &33751961300355492
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622242313447933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.317583, y: 0.32035983, z: 0.080000035}
+  m_Center: {x: -0.00205566, y: 0.00074277073, z: 0}
 --- !u!33 &33934513521047336
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1364,6 +1435,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908637005804978}
   m_Mesh: {fileID: 4300000, guid: f6e1de10ab0470441b4f5d53dadd206e, type: 3}
+--- !u!65 &33934513521047337
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908637005804978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.30866122, y: 0.3400195, z: 0.07980548}
+  m_Center: {x: -0.0031018779, y: -0.0059842467, z: -0.00083396025}
 --- !u!1001 &7436137422576754115
 PrefabInstance:
   m_ObjectHideFlags: 0

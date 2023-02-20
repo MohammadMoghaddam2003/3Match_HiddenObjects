@@ -18,6 +18,7 @@ public class ItemController : MonoBehaviour, IItemController
     private Camera _mainCamera;
     private Coroutine _rotateCoroutine;
     private Transform _childObject;
+    private Collider _childCollider;
 
     private Vector3 _pos;
     private Vector3 _mouseBeginPos;
@@ -37,7 +38,9 @@ public class ItemController : MonoBehaviour, IItemController
 
     private void Awake()
     {
+        _childObject = transform.GetChild(0);
         _rigidbody = GetComponent<Rigidbody>();
+        _childCollider = _childObject.GetComponent<Collider>();
     }
 
 
@@ -56,7 +59,6 @@ public class ItemController : MonoBehaviour, IItemController
         _resetRotationSpeed = itemsSetting.GetResetRotateSpeed;
         _backToSceneForce = itemsSetting.GetBackToSceneForce;
         _mainCamera = Camera.main;
-        _childObject = transform.GetChild(0);
     }
 
 
@@ -84,6 +86,7 @@ public class ItemController : MonoBehaviour, IItemController
 
     private void EndDrag()
     {
+        EnableChildCollider();
         ApplyGravity();
         if(_rotateCoroutine is not null) StopCoroutine(_rotateCoroutine);
         _rotateCoroutine = null;
@@ -91,10 +94,17 @@ public class ItemController : MonoBehaviour, IItemController
     }
 
 
+
+    private void EnableChildCollider() => _childCollider.enabled = true;
+    private void DisableChildCollider() => _childCollider.enabled = false;
+    
+    
+    
     private void Select()
     {
         if(_collectedAll) return;
         
+        DisableChildCollider();
         
         if (!_isSelected)
         {
