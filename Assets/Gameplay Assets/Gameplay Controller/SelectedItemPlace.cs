@@ -1,19 +1,25 @@
 using System;
 using UnityEngine;
 
-[Serializable]
-public class Baskets
+namespace Gameplay_Assets.Gameplay_Controller
 {
-    [SerializeField] private Transform pos;
+    [Serializable]
+    public class Baskets
+    {
+        [SerializeField] private Transform pos;
 
     
-    private bool _used;
+        private bool _used;
 
-    public Vector3 GetPos { get => pos.position; }
-    public Transform GetParent { get => pos.parent; }
+        public Vector3 GetPos { get => pos.position; }
+        
+        public Transform GetParent { get => pos.parent; }
 
-    public bool GetUsed { get => _used; }
+        public bool GetUsed { get => _used; }
 
-    public void SetUsedTrue() { _used = true; }
-    public void SetUsedFalse() => _used = false;
+        public void SetUsedTrue() => _used = true; 
+
+        public void SetUsedFalse() => _used = false;
+        
+    }
 }

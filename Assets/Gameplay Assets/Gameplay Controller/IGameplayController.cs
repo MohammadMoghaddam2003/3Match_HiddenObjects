@@ -1,8 +1,9 @@
-using UnityEngine;
-
-public interface IGameplayController
+namespace Gameplay_Assets.Gameplay_Controller
 {
-    public void SelectedItem(ItemController itemScript, out bool result);
-    public void RemoveItem(ItemController itemScript, Transform basket);
-    public void AddStar();
+    public interface IGameplayController
+    {
+        public void SelectedItem();
+        public void RemoveItem();
+        public void AddStar();
+    }
 }

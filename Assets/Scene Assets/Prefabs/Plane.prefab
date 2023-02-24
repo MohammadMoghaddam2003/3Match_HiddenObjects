@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 1172359693}
   - component: {fileID: 1172359692}
   m_Layer: 0
-  m_Name: Basket
+  m_Name: Basket 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 1334490482}
   - component: {fileID: 1334490481}
   m_Layer: 0
-  m_Name: Basket
+  m_Name: Basket 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 1520082953}
   - component: {fileID: 1520082952}
   m_Layer: 0
-  m_Name: Basket
+  m_Name: Basket 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
