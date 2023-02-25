@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Text;
 using Data.Data.Scripts;
 using Data.Events.Scripts;
@@ -48,13 +49,15 @@ namespace Gameplay_Assets.Gameplay_Controller
 
         private void AddItem() => _selectedItemsCount++;
         
-        public void CheckBasket()  => SelectedItemsController();
+        public void CheckBasket()  => StartCoroutine(SelectedItemsController());
 
-        private void SelectedItemsController()
+        private IEnumerator SelectedItemsController()
         {
             if(_selectedItemsCount == 3)
             {
                 SetGatheringPos();
+
+                yield return new WaitForSeconds(.6f);
                 completeItemEvent.Raise();
                 
                 ClearSelectHistory();

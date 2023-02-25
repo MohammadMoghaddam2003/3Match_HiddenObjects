@@ -2,6 +2,7 @@ using System.Collections;
 using System.Text;
 using Data.Data.Scripts;
 using Data.Events.Scripts;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Gameplay_Assets.Items.Scripts
@@ -153,8 +154,6 @@ namespace Gameplay_Assets.Items.Scripts
         private IEnumerator MoveToTargetPos(Vector3 target)
         {    
             RemoveGravity();
-            StartCoroutine(ResetChildRotation());
-
         
             while (Vector3.Distance(transform.position , target) > .15f)
             {
@@ -164,37 +163,28 @@ namespace Gameplay_Assets.Items.Scripts
         
             transform.position = target;
             FreezeRigidbodyConstraints();
-            ResetThisObjectRotation();
+            StartCoroutine(ResetThisObjectRotation());
+            StopCoroutine(ResetThisObjectRotation());
             EnableCollider();
             StopCoroutine(MoveToTargetPos(target));
 
             NotifierItemArrive();
         }
 
-        private IEnumerator ResetChildRotation()
-        {
-            while (true)
-            {
-                if (Quaternion.Angle(_childObject.rotation, defaultRotation) < 1 || Quaternion.Angle(_childObject.rotation, defaultRotation) > 179)
-                {
-                    _childObject.rotation = Quaternion.Euler(Vector3.zero);
-                    break;
-                }
-            
-            
-                _childObject.rotation = Quaternion.Lerp(_childObject.rotation,defaultRotation,_resetRotationSpeed * Time.deltaTime);
-                yield return new WaitForSeconds(Time.fixedDeltaTime);
-            }
-
-            StopCoroutine(ResetChildRotation());
-        }
+        private void ResetChildRotation() => _childObject.rotation = defaultRotation;
         
         private void FreezeRigidbodyConstraints() =>_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         
-        private void ResetThisObjectRotation()
+        private IEnumerator ResetThisObjectRotation()
         {
-            transform.rotation = Quaternion.Euler(Vector3.zero);
-            StartCoroutine(ResetChildRotation());
+            while (Quaternion.Angle(_childObject.rotation,defaultRotation) > 1)
+            { 
+                transform.rotation = Quaternion.Lerp(transform.rotation, defaultRotation, _resetRotationSpeed * Time.fixedDeltaTime); 
+                yield return new WaitForSeconds(Time.fixedDeltaTime);
+            }
+            
+            
+            ResetChildRotation();
         }
         
         private void ApplyGravity()
@@ -252,7 +242,7 @@ namespace Gameplay_Assets.Items.Scripts
             Basket = null;
             UnfreezeRigidbodyConstraints();
             ApplyGravity();
-            _rigidbody.AddForce(-transform.forward * _backToSceneForce);
+            _rigidbody.AddForce(-Vector3.forward * _backToSceneForce);
 
             yield return new WaitForSeconds(.1f);
             EnableCollider();
