@@ -12,3 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5de45f22fa3b9848a84147b292e71a0, type: 3}
   m_Name: Gameplay Data
   m_EditorClassIdentifier: 
+  targetItemControllers: []
+  selectedBasket: {fileID: 0}
+  unUsingBasket: {fileID: 0}
+  itemTarget: {x: 0, y: 0, z: 0}
+  gatheringPos: {x: 0, y: 0, z: 0}
+  selectedItemValidation: 0
+  targetItemCount: 9
+  otherItemCount: 2
