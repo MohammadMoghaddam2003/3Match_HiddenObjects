@@ -8,7 +8,7 @@ namespace Gameplay_Assets.Level_Generator.Scripts
 {
     public class LevelGenerator : MonoBehaviour
     {
-        [SerializeField] private GameObject[] itemPrefabs;
+        [SerializeField] private List<GameObject> itemPrefabs = new List<GameObject>();
         [SerializeField] private GameplayData gameplayData;
         [SerializeField] private Transform[] generatePos = new Transform[3];
 
@@ -20,21 +20,22 @@ namespace Gameplay_Assets.Level_Generator.Scripts
         
         void Start()
         {
-            ChooseTargetItems(gameplayData.GetTargetItemCount,_targetItems);
+            ChooseItems(gameplayData.GetTargetItemCount,_targetItems);
             SetTargetsToData();
             StartGeneration(_targetItems);
             
-            ChooseTargetItems(gameplayData.GetOtherItemCount,_otherItems);
+            ChooseItems(gameplayData.GetOtherItemCount,_otherItems);
             StartGeneration(_otherItems);
         }
         
         
-        private void ChooseTargetItems(int length, List<GameObject> list)
+        private void ChooseItems(int length, List<GameObject> list)
         {
             for (int i = 0; i < length; i++)
             {
-                int randomIndex = Random.Range(0, (itemPrefabs.Length));
+                int randomIndex = Random.Range(0, (itemPrefabs.Count));
                 list.Add(itemPrefabs[randomIndex]);
+                itemPrefabs.Remove(itemPrefabs[randomIndex]);
             }
         }
 
@@ -66,7 +67,7 @@ namespace Gameplay_Assets.Level_Generator.Scripts
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    yield return new WaitForSeconds(.03f);
+                    yield return new WaitForSeconds(.02f);
                     Instantiate(list[i], generatePos[j].position, Quaternion.identity);
                 }
             }
