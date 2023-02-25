@@ -6,6 +6,23 @@ TagManager:
   tags:
   - Ammo
   - AmericanFootball
+  - Microphone
+  - MicroChip
+  - Magnet
+  - Key
+  - Island
+  - Home
+  - Headphone
+  - Grenade
+  - Gear
+  - GasConnister
+  - FutsalBall
+  - Tuna
+  - Strawberry
+  - Steak
+  - Pear
+  - Pizza
+  - IceCream
   layers:
   - Default
   - TransparentFX
