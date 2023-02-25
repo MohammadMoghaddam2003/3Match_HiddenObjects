@@ -110,7 +110,7 @@ namespace Gameplay_Assets.Items.Scripts
             else
             {
                 _isSelected = false;
-                BackFromBasket();
+                StartCoroutine(BackFromBasket());
             }
         }
         
@@ -244,14 +244,18 @@ namespace Gameplay_Assets.Items.Scripts
             _arriveToTargetEvent.Raise();
         }
 
-        private void BackFromBasket()
+        private IEnumerator BackFromBasket()
         {
+            DisableCollider();
             _gameplayData.UnUsingBasket = Basket;
             _returnedEvent.Raise();
             Basket = null;
             UnfreezeRigidbodyConstraints();
             ApplyGravity();
             _rigidbody.AddForce(-transform.forward * _backToSceneForce);
+
+            yield return new WaitForSeconds(.1f);
+            EnableCollider();
         }
         
         private void UnfreezeRigidbodyConstraints() => _rigidbody.constraints = RigidbodyConstraints.None;
