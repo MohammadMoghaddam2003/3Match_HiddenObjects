@@ -11,7 +11,7 @@ namespace Gameplay_Assets.Items.Scripts
     [RequireComponent(typeof(Collider))]
     public class ItemController : MonoBehaviour
     {
-        [SerializeField] private Quaternion defaultRotation;
+        [SerializeField] private Vector3 defaultRotation;
         [SerializeField] private ItemsSetting itemsSetting;
         
         private Rigidbody _rigidbody;
@@ -171,15 +171,15 @@ namespace Gameplay_Assets.Items.Scripts
             NotifierItemArrive();
         }
 
-        private void ResetChildRotation() => _childObject.rotation = defaultRotation;
+        private void ResetChildRotation() => _childObject.rotation = Quaternion.Euler(defaultRotation);
         
         private void FreezeRigidbodyConstraints() =>_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         
         private IEnumerator ResetThisObjectRotation()
         {
-            while (Quaternion.Angle(_childObject.rotation,defaultRotation) > 1)
+            while (Quaternion.Angle(_childObject.rotation,Quaternion.Euler(defaultRotation)) > 1)
             { 
-                transform.rotation = Quaternion.Lerp(transform.rotation, defaultRotation, _resetRotationSpeed * Time.fixedDeltaTime); 
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(defaultRotation), _resetRotationSpeed * Time.fixedDeltaTime); 
                 yield return new WaitForSeconds(Time.fixedDeltaTime);
             }
             
