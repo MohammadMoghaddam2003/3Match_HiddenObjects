@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2713946734599423896}
   - component: {fileID: 2705716710517257638}
   - component: {fileID: 2705716710517257633}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Food_IceCream_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 5655372791541560729}
   - component: {fileID: 5655372791541560734}
   - component: {fileID: 5655372791541560735}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IceCream
   m_TagString: IceCream
   m_Icon: {fileID: 0}

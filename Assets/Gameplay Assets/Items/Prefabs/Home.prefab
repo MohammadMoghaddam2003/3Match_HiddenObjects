@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7585454590454234052}
   - component: {fileID: 7585454590454234053}
   - component: {fileID: 7585454590454234074}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Home
   m_TagString: Home
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 9054313131879375265}
   - component: {fileID: 9044790584417712545}
   - component: {fileID: 9054313131879375264}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Home_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

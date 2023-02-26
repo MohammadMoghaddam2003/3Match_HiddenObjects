@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2501785703530510394}
   - component: {fileID: 2494464613025988014}
   - component: {fileID: 2501785703530510397}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_AmericanFootball_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 2508445537950846764}
   - component: {fileID: 2508445537950846765}
   - component: {fileID: 2508445537950846767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: American Football
   m_TagString: AmericanFootball
   m_Icon: {fileID: 0}

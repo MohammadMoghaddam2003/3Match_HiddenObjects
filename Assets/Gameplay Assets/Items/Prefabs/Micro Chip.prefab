@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3793107070666802487}
   - component: {fileID: 3783863324951339161}
   - component: {fileID: 3806332642690444732}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Micro_Chip_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 7242717615593472571}
   - component: {fileID: 7242717615593472568}
   - component: {fileID: 7242717615593472517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Micro Chip
   m_TagString: MicroChip
   m_Icon: {fileID: 0}

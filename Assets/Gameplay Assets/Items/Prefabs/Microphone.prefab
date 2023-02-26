@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4685118379638291156}
   - component: {fileID: 4695253452504580476}
   - component: {fileID: 4714636044795918417}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Microphone_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 8867692880733758676}
   - component: {fileID: 8867692880733758677}
   - component: {fileID: 8867692880733758678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Microphone
   m_TagString: Microphone
   m_Icon: {fileID: 0}

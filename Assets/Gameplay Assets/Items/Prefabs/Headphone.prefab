@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 97043486770771834}
   - component: {fileID: 106457150140641394}
   - component: {fileID: 89807329369466559}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Headphones_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 92747940477561385}
   - component: {fileID: 92747940477561384}
   - component: {fileID: 92747940477561387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Headphone
   m_TagString: Headphone
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 298262436026602221}
   - component: {fileID: 298262436026602222}
   - component: {fileID: 298262436026602223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tuna
   m_TagString: Tuna
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 8299688533197622757}
   - component: {fileID: 8289004830454498873}
   - component: {fileID: 8313633423214279746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Food_Tuna_Can_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

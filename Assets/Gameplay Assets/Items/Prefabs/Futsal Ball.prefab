@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3848159465096539126}
   - component: {fileID: 3840491195690288592}
   - component: {fileID: 3848159465096539121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Futsal_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 5300588553384904391}
   - component: {fileID: 5300588553384904388}
   - component: {fileID: 5300588553384904389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Futsal Ball
   m_TagString: FutsalBall
   m_Icon: {fileID: 0}

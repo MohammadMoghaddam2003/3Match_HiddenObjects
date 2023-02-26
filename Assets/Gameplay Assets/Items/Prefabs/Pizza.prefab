@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2885347979420022088}
   - component: {fileID: 2885347979420022087}
   - component: {fileID: 2885347979420022086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pizza
   m_TagString: Pizza
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 8132056308562234153}
   - component: {fileID: 8142459378122777527}
   - component: {fileID: 8142459378122777528}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Food_Pizza_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

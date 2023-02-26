@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2728347321125332437}
   - component: {fileID: 2734100610087082537}
   - component: {fileID: 2714207112831437728}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_GasCannister_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4496163686058135463}
   - component: {fileID: 4496163686058135464}
   - component: {fileID: 4496163686058135465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gas Connister
   m_TagString: GasConnister
   m_Icon: {fileID: 0}

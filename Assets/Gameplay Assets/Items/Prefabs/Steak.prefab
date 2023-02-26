@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7105686282723374674}
   - component: {fileID: 7105686282723374677}
   - component: {fileID: 7105686282723374676}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Steak
   m_TagString: Steak
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 8998618886565089242}
   - component: {fileID: 8990869315116079948}
   - component: {fileID: 8998618886565089243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Food_Steak_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

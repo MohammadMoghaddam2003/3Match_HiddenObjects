@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2800632167786090473}
   - component: {fileID: 2807702762606086375}
   - component: {fileID: 2807702762606086368}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Icon_Food_Strawberry_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4401106927370182809}
   - component: {fileID: 4401106927370182808}
   - component: {fileID: 4401106927370182815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Strawberry
   m_TagString: Strawberry
   m_Icon: {fileID: 0}

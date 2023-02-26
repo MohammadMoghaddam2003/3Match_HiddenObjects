@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Text;
 using Data.Data.Scripts;
@@ -46,9 +47,6 @@ namespace Gameplay_Assets.Items.Scripts
 
         public Transform Basket { get; set; }
 
-        
-        
-        
         private void Awake()
         {
             _childObject = transform.GetChild(0);
@@ -81,7 +79,7 @@ namespace Gameplay_Assets.Items.Scripts
 
         private void OnMouseDrag()
         {
-            if(Vector3.Distance(Input.mousePosition,_mouseBeginPos) < _selectOffset) return;
+            if(Vector3.Distance(Input.mousePosition,_mouseBeginPos) < _selectOffset || _isSelected) return;
         
             RemoveGravity();
             FingerMoving();
@@ -94,6 +92,8 @@ namespace Gameplay_Assets.Items.Scripts
         {
             if (Vector3.Distance(Input.mousePosition,_mouseBeginPos) < _selectOffset && !_drag) Select();
             else EndDrag();
+            
+            ResetChildRotation();
         }
 
         private void Select()
@@ -171,7 +171,7 @@ namespace Gameplay_Assets.Items.Scripts
             NotifierItemArrive();
         }
 
-        private void ResetChildRotation() => _childObject.rotation = Quaternion.Euler(defaultRotation);
+        private void ResetChildRotation() => _childObject.rotation = transform.rotation;
         
         private void FreezeRigidbodyConstraints() =>_rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         
@@ -244,12 +244,12 @@ namespace Gameplay_Assets.Items.Scripts
             ApplyGravity();
             _rigidbody.AddForce(-Vector3.forward * _backToSceneForce);
 
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.3f);
             EnableCollider();
         }
         
         private void UnfreezeRigidbodyConstraints() => _rigidbody.constraints = RigidbodyConstraints.None;
-        
+
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.transform.CompareTag(transform.tag) && _gatheringPos) StartCoroutine(DestroyManage());
