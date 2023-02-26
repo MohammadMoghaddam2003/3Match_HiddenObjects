@@ -57,9 +57,11 @@ namespace Gameplay_Assets.Gameplay_Controller
 
         private bool CheckValidation(string tag)
         {
-            for (int i = 0; i < gameplayData.TargetItemControllers.Length; i++)
+            int length = gameplayData.TargetItemControllers.Length;
+            
+            for (int i = 0; i < length; i++)
             {
-                if (tag == gameplayData.TargetItemControllers[i].Tag) return true;
+                if (tag == gameplayData.TargetItemControllers[i]) return true;
             }
 
             return false;

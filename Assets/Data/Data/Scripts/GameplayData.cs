@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using System.Text;
-using Gameplay_Assets.Items.Scripts;
 using UnityEngine;
 
 namespace Data.Data.Scripts
@@ -8,7 +6,7 @@ namespace Data.Data.Scripts
     [CreateAssetMenu(menuName = "Data/Gameplay Data", fileName = "Gameplay Data")]
     public class GameplayData : ScriptableObject
     {
-       [SerializeField] private TargetItemController[] targetItemControllers;
+       [SerializeField] private string[] targetItemControllers;
        [SerializeField] private Transform selectedBasket;
        [SerializeField] private Transform unUsingBasket;
        [SerializeField] private Vector3 itemTarget;
@@ -25,7 +23,7 @@ namespace Data.Data.Scripts
         
         
         
-        public TargetItemController[] TargetItemControllers
+        public string[] TargetItemControllers
         {
             get => targetItemControllers;
             set => targetItemControllers = value;

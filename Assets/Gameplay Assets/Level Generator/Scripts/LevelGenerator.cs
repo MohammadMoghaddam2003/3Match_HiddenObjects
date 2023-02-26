@@ -15,7 +15,7 @@ namespace Gameplay_Assets.Level_Generator.Scripts
         
         private List<GameObject> _targetItems = new List<GameObject>();
         private List<GameObject> _otherItems = new List<GameObject>();
-        private TargetItemController[] _targetItemController;
+        private string[] _targetItemController;
         
         
         void Start()
@@ -42,12 +42,11 @@ namespace Gameplay_Assets.Level_Generator.Scripts
         
         private void SetTargetsToData()
         {
-            _targetItemController = new TargetItemController[gameplayData.GetTargetItemCount];
+            _targetItemController = new string[gameplayData.GetTargetItemCount];
             
             for (int i = 0; i < _targetItems.Count; i++)
             {
-                _targetItemController[i] = new TargetItemController();
-                _targetItemController[i].Tag = _targetItems[i].tag;
+                _targetItemController[i] = _targetItems[i].tag;
             }
 
             gameplayData.TargetItemControllers = _targetItemController;
