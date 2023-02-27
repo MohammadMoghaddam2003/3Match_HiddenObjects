@@ -246,6 +246,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 9a5c3e55e035de24aab2ba11817ca969,
         type: 3}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 705451370}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!224 &2168633 stripped
@@ -254,6 +284,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2168632}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &29526806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 1194846610}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &192348500
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +981,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a63adc5a08a8ca3488f91930f22ebb41,
         type: 3}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1443070447}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!224 &472134502 stripped
@@ -1070,6 +1142,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 67a017c3dbf8ae648a0ad0f1dae3ee69,
         type: 3}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1280622683}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!224 &607741348 stripped
@@ -1078,6 +1180,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 607741347}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &634747182 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 2520564099547140932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &683918323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1349,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683918323}
   m_CullTransparentMesh: 1
+--- !u!114 &705451370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 2168632}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &719320064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1734,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 2b4ae23a3188c8c42b7d11705a9d3c4e,
         type: 3}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1138655204}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!224 &863414152 stripped
@@ -1616,6 +1772,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 863414151}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &886873418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 319072131442301138, guid: 8fef3d4c365c2d341b952bd233411903,
+    type: 3}
+  m_PrefabInstance: {fileID: 383033966}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1034134770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1739,6 +1907,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 453f5c21c78c92140840e5fe1689d2cc,
         type: 3}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1469511460}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!224 &1034134771 stripped
@@ -1874,6 +2072,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049924092}
   m_CullTransparentMesh: 1
+--- !u!1001 &1074060338
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698082, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961363186225698083, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
+      propertyPath: m_Name
+      value: Game Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: defc136c8642ac648811ec403a170ccc, type: 3}
 --- !u!114 &1123724316 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3045384020295983381, guid: 2fc2f6f5dddc79c4fa2a9fc195dd6c8a,
@@ -1884,6 +2151,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4f0f8335e992d145824d082708d46ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1138655204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 863414151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1172928069
@@ -2009,6 +2288,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6b7adfdb648c13049af24598c755e6eb,
         type: 3}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1779154694}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!224 &1172928070 stripped
@@ -2308,7 +2617,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1295394790}
+        m_TargetAssemblyTypeName: Menu.Scripts.SignInController, Assembly-CSharp
+        m_MethodName: OnChangeUserName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2456,6 +2777,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207359356}
   m_CullTransparentMesh: 1
+--- !u!114 &1269070876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 1544406488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1280622683 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 607741347}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1295394786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,6 +2812,7 @@ GameObject:
   - component: {fileID: 1295394787}
   - component: {fileID: 1295394789}
   - component: {fileID: 1295394788}
+  - component: {fileID: 1295394790}
   m_Layer: 5
   m_Name: Signin Menu
   m_TagString: Untagged
@@ -2481,7 +2827,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295394786}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2537,6 +2883,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295394786}
   m_CullTransparentMesh: 1
+--- !u!114 &1295394790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295394786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b08d7f7f5b98f4aa5acb5b9e31359d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuController: {fileID: 1123724316}
+  profileUserNameText: {fileID: 886873418}
+  profileAvatar: {fileID: 29526806}
+  inputField: {fileID: 1195672979}
+  scrollbar: {fileID: 1049924094}
+  playButton: {fileID: 1690219246}
+  playingButtonColor: {r: 0.09019608, g: 1, b: 0.12941177, a: 1}
+  unPlayingButtonColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
+  maxUserNameCharacter: 15
 --- !u!1 &1313224823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,12 +3182,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412680889}
   m_CullTransparentMesh: 1
+--- !u!114 &1443070447 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 472134501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1463542670 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
     type: 3}
   m_PrefabInstance: {fileID: 1194846610}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1469511460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 1034134770}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1544406488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2944,6 +3335,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 778d41044bc292546a7233bce1d8d60c,
         type: 3}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1269070876}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!224 &1544406489 stripped
@@ -3073,7 +3494,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1690219246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1295394790}
+        m_TargetAssemblyTypeName: Menu.Scripts.SignInController, Assembly-CSharp
+        m_MethodName: SignIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1690219246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3087,7 +3520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.088679194, g: 1, b: 0.12942362, a: 1}
+  m_Color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3375,6 +3808,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1746842711}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1779154694 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2520564100826438752, guid: 334113b0d1f66f24296264625f5fe157,
+    type: 3}
+  m_PrefabInstance: {fileID: 1172928069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1820470629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3972,6 +4417,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1295394790}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnChangeAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu.Scripts.SignInController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 634747182}
+    - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.UI.Image, UnityEngine.UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}

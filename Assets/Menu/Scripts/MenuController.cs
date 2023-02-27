@@ -6,7 +6,6 @@ namespace Menu.Scripts
     {
         [SerializeField] private GameObject startMenu;
         [SerializeField] private GameObject signinMenu;
-        [SerializeField] private GameObject settingMenu;
 
         
         
@@ -15,22 +14,12 @@ namespace Menu.Scripts
         {
             startMenu.SetActive(true);
             signinMenu.SetActive(false);
-            settingMenu.SetActive(false);
         }
         
         
         public void GoSigninMenu()
         {
             signinMenu.SetActive(true);
-            startMenu.SetActive(false);
-            settingMenu.SetActive(false);
-        }
-        
-        
-        public void GoToSetting()
-        {
-            settingMenu.SetActive(true);
-            signinMenu.SetActive(false);
             startMenu.SetActive(false);
         }
     }
