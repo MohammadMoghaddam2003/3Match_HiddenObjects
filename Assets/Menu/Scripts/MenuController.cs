@@ -35,10 +35,6 @@ namespace Menu.Scripts
         
         
         
-        public void SigninCompleted()
-        {
-            signinMenu.SetActive(false);
-            _levelController.LoadLevel();
-        }
+        public void SigninCompleted() => _levelController.LoadLevel();
     }
 }

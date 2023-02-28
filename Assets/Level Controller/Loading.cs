@@ -15,14 +15,14 @@ namespace Level_Controller
         [SerializeField] private TextMeshProUGUI progressText;
 
         private Coroutine _loadingProgress;
-        private SceneLoader _sceneLoader;
+        private LevelController _levelController;
 
         
         
         
         private void OnEnable() => _loadingProgress = StartCoroutine(LoadingProgress());
 
-        private void Start() => _sceneLoader = GameManager.Instance.GetSceneLoader;
+        private void Start() => _levelController = GameManager.Instance.GetLevelController;
 
 
         private IEnumerator LoadingProgress()
@@ -41,7 +41,7 @@ namespace Level_Controller
                 yield return new WaitForSeconds(Time.fixedDeltaTime);
             }
             
-            _sceneLoader.LoadGameplayScene();
+            _levelController.StartMatch();
             StopCoroutine(_loadingProgress);
         }
     }
