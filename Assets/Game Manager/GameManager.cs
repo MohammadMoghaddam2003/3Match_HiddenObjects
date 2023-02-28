@@ -10,6 +10,7 @@ namespace Game_Manager
     public class GameManager : MonoBehaviour
     {
         [SerializeField] private PlayerInfo playerInfo;
+        [SerializeField] private PlayerInfo opponentInfo;
         [SerializeField] private SceneLoader sceneLoader;
         [SerializeField] private LevelController levelController;
 
@@ -18,6 +19,7 @@ namespace Game_Manager
         
         
         public PlayerInfo GetPlayerInfo { get => playerInfo; }
+        public PlayerInfo GetOpponentInfo { get => opponentInfo; }
         public SceneLoader GetSceneLoader { get => sceneLoader; }
         public LevelController GetLevelController { get => levelController; }
 

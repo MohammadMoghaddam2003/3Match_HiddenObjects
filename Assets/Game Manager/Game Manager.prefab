@@ -45,3 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInfo: {fileID: 11400000, guid: 9fb2116b677d0ab47a2e36b1b05bfce4, type: 2}
+  opponentInfo: {fileID: 11400000, guid: f4d6ea58bd4867d4299e0228b7058759, type: 2}
+  sceneLoader: {fileID: 0}
+  levelController: {fileID: 0}
