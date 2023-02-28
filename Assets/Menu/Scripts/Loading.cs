@@ -1,4 +1,5 @@
 using System.Collections;
+using Game_Manager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,6 +36,7 @@ namespace Menu.Scripts
                 yield return new WaitForSeconds(Time.fixedDeltaTime);
             }
             
+            GameManager.Instance.GetSceneLoader.LoadGameplayScene();
             StopCoroutine(_loadingProgress);
         }
     }
