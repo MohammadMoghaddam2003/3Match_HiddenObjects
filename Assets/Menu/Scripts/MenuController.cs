@@ -6,6 +6,7 @@ namespace Menu.Scripts
     {
         [SerializeField] private GameObject startMenu;
         [SerializeField] private GameObject signinMenu;
+        [SerializeField] private GameObject loadingPage;
 
         
         
@@ -21,6 +22,14 @@ namespace Menu.Scripts
         {
             signinMenu.SetActive(true);
             startMenu.SetActive(false);
+        }
+        
+        
+        
+        public void GoLoading()
+        {
+            signinMenu.SetActive(false);
+            loadingPage.SetActive(true);
         }
     }
 }

@@ -17,8 +17,8 @@ namespace Menu.Scripts
         [SerializeField] private Color playingButtonColor;
         [SerializeField] private Color unPlayingButtonColor;
         [SerializeField] private int maxUserNameCharacter = 10;
-        
-        
+
+
         private PlayerInfo _playerInfo;
         private bool _canPlay;
 
@@ -97,8 +97,7 @@ namespace Menu.Scripts
             
             _playerInfo.UserName = profileUserNameText.text;
             _playerInfo.Avatar = profileAvatar.sprite;
-
-            // Call the menu controller Play method 
+            menuController.GoLoading();
         }
     }
 }
