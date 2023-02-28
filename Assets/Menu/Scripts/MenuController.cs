@@ -1,3 +1,6 @@
+using System;
+using Game_Manager;
+using Level_Controller;
 using UnityEngine;
 
 namespace Menu.Scripts
@@ -6,11 +9,17 @@ namespace Menu.Scripts
     {
         [SerializeField] private GameObject startMenu;
         [SerializeField] private GameObject signinMenu;
-        [SerializeField] private GameObject loadingPage;
+
+
+        private LevelController _levelController;
+
+
+        private void Awake() => DontDestroyOnLoad(this.gameObject);
+
+        private void Start() => _levelController = GameManager.Instance.GetLevelController;
+
 
         
-        
-
         public void GoStartMenu()
         {
             startMenu.SetActive(true);
@@ -26,10 +35,10 @@ namespace Menu.Scripts
         
         
         
-        public void GoLoading()
+        public void SigninCompleted()
         {
             signinMenu.SetActive(false);
-            loadingPage.SetActive(true);
+            _levelController.LoadLevel();
         }
     }
 }

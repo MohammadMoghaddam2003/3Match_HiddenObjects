@@ -97,7 +97,7 @@ namespace Menu.Scripts
             
             _playerInfo.UserName = profileUserNameText.text;
             _playerInfo.Avatar = profileAvatar.sprite;
-            menuController.GoLoading();
+            menuController.SigninCompleted();
         }
     }
 }

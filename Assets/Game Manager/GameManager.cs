@@ -1,5 +1,7 @@
 using System;
 using Data.Data.Scripts;
+using Gameplay_Assets.Level_Generator.Scripts;
+using Level_Controller;
 using Scene_Loader;
 using UnityEngine;
 
@@ -9,6 +11,7 @@ namespace Game_Manager
     {
         [SerializeField] private PlayerInfo playerInfo;
         [SerializeField] private SceneLoader sceneLoader;
+        [SerializeField] private LevelController levelController;
 
         
         public static GameManager Instance;
@@ -16,6 +19,7 @@ namespace Game_Manager
         
         public PlayerInfo GetPlayerInfo { get => playerInfo; }
         public SceneLoader GetSceneLoader { get => sceneLoader; }
+        public LevelController GetLevelController { get => levelController; }
 
 
 

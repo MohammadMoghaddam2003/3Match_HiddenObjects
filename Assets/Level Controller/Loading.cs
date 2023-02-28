@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using Game_Manager;
+using Scene_Loader;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-namespace Menu.Scripts
+namespace Level_Controller
 {
     public class Loading : MonoBehaviour
     {
@@ -12,12 +15,14 @@ namespace Menu.Scripts
         [SerializeField] private TextMeshProUGUI progressText;
 
         private Coroutine _loadingProgress;
+        private SceneLoader _sceneLoader;
 
         
         
         
         private void OnEnable() => _loadingProgress = StartCoroutine(LoadingProgress());
-        
+
+        private void Start() => _sceneLoader = GameManager.Instance.GetSceneLoader;
 
 
         private IEnumerator LoadingProgress()
@@ -36,7 +41,7 @@ namespace Menu.Scripts
                 yield return new WaitForSeconds(Time.fixedDeltaTime);
             }
             
-            GameManager.Instance.GetSceneLoader.LoadGameplayScene();
+            _sceneLoader.LoadGameplayScene();
             StopCoroutine(_loadingProgress);
         }
     }
