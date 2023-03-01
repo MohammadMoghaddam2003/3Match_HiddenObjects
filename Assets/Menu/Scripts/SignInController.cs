@@ -31,7 +31,7 @@ namespace Menu.Scripts
 
         private void InitialSetting()
         {
-            _playerInfo = GameManager.Instance.GetPlayerInfo;
+            _playerInfo = DataController.Instance.GetPlayerInfo;
             scrollbar.value = 0;
             playButton.color = unPlayingButtonColor;
             _canPlay = false;

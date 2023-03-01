@@ -21,7 +21,7 @@ namespace UI
             _stars = stars;
             _collectedStar = collectedStarSprite;
             _username = username;
-            _playerInfo = GameManager.Instance.GetPlayerInfo;
+            _playerInfo = DataController.Instance.GetPlayerInfo;
         }
 
 
