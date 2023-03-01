@@ -13,6 +13,8 @@ namespace UI
         [SerializeField] private Sprite collectedStarSprite;
         [SerializeField] private TextMeshProUGUI playerUsername;
         [SerializeField] private TextMeshProUGUI opponentUsername;
+        [SerializeField] private GameObject losePanel;
+        [SerializeField] private GameObject winPanel;
 
 
         private PlayerUIController _playerUIController;
@@ -22,6 +24,8 @@ namespace UI
 
         private void OnEnable()
         {
+            Initial();
+            
             _playerUIController = new PlayerUIController(playerAvatar, playerStars,collectedStarSprite, playerUsername);
             _playerUIController.PreparePlayerUI();
 
@@ -30,7 +34,16 @@ namespace UI
         }
 
 
+        private void Initial()
+        {
+          winPanel.SetActive(false);
+          losePanel.SetActive(false);
+        }
+
+
         public void ChangePlayerStarSprite() => _playerUIController.ChangeCollectedStarSprite();
         public void ChangeOpponentStarSprite() => _opponentUIController.ChangeCollectedStarSprite();
+        public void ShowWinPanel() => winPanel.SetActive(true);
+        public void ShowLosePanel() => losePanel.SetActive(true);
     }
 }
