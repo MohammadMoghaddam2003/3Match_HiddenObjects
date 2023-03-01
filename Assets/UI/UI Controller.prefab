@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAvatar: {fileID: 0}
+  opponentAvatar: {fileID: 0}
   playerStars:
   - {fileID: 0}
   - {fileID: 0}
@@ -54,4 +55,16 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  opponentStars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  collectedStarSprite: {fileID: 21300000, guid: 64f8eb4a25fe643169785ba4aef65d43,
+    type: 3}
   playerUsername: {fileID: 0}
+  opponentUsername: {fileID: 0}

@@ -1176,11 +1176,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Generator
       objectReference: {fileID: 0}
-    - target: {fileID: 2504333697517769298, guid: 74bf06a863ff78a4b80807cca365e399,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2504333697517769299, guid: 74bf06a863ff78a4b80807cca365e399,
         type: 3}
       propertyPath: generatePos.Array.data[0]
@@ -1340,17 +1335,6 @@ PrefabInstance:
       propertyPath: opponentUsername
       value: 
       objectReference: {fileID: 344905543}
-    - target: {fileID: 2765150324209376359, guid: 8a7e4ef4dfb288f4d8f7000213c305c4,
-        type: 3}
-      propertyPath: collectedStarSprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 64f8eb4a25fe643169785ba4aef65d43,
-        type: 3}
-    - target: {fileID: 2765150324209376359, guid: 8a7e4ef4dfb288f4d8f7000213c305c4,
-        type: 3}
-      propertyPath: opponentStars.Array.size
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 2765150324209376359, guid: 8a7e4ef4dfb288f4d8f7000213c305c4,
         type: 3}
       propertyPath: playerStars.Array.data[0]
