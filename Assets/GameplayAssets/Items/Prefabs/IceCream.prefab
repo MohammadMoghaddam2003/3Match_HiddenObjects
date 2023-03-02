@@ -188,14 +188,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventListenerHandler:
+  eventListenerHandler:
   - eventSO: {fileID: 11400000, guid: 9416fefe5de25264197f6cd5ebafbb57, type: 2}
     reponse:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 5655372791541560734}
-          m_TargetAssemblyTypeName: Gameplay_Assets.Items.Scripts.ItemController,
-            Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Item.ItemController, Assembly-CSharp
           m_MethodName: MoveToGatheringPos
           m_Mode: 1
           m_Arguments:
