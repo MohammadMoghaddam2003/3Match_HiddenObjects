@@ -45,19 +45,6 @@ namespace Controllers.Gameplay
             gameplayData.SelectedItemValidation = true;
         }
 
-
-        // private bool CheckValidation(string tag)
-        // {
-        //     int length = gameplayData.TargetItemControllers.Length;
-        //     
-        //     for (int i = 0; i < length; i++)
-        //     {
-        //         if (tag == gameplayData.TargetItemControllers[i]) return true;
-        //     }
-        //
-        //     return false;
-        // }
-
         private void AddItem() => _selectedItemsCount++;
         
         public void CheckBasket()  => StartCoroutine(SelectedItemsController());

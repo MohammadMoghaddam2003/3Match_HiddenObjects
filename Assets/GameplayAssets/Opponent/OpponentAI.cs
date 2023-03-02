@@ -1,18 +1,32 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
+using Controllers.UI;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class OpponentAI : MonoBehaviour
+namespace GameplayAssets.Opponent
 {
-    // Start is called before the first frame update
-    void Start()
+    public class OpponentAI : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private UIController uIController;
+        [SerializeField] private int minSecond = 3;
+        [SerializeField] private int maxSecond = 15;
 
-    // Update is called once per frame
-    void Update()
-    {
+
+        private void Start()
+        {
+            StartCoroutine(AISimulate());
+        }
+
+
+        private IEnumerator AISimulate()
+        {
+            int time = Random.Range(minSecond, maxSecond + 1);
+
+            yield return new WaitForSeconds(time);
+            uIController.ChangeOpponentStarSprite();
+            StartCoroutine(AISimulate());
+        }
         
     }
 }

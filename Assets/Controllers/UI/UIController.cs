@@ -1,4 +1,6 @@
+using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,8 +21,10 @@ namespace Controllers.UI
 
         private PlayerUIController _playerUIController;
         private OpponentUIController _opponentUIController;
-        
-        
+
+
+        private void Awake() => DontDestroyOnLoad(this.gameObject);
+
 
         private void OnEnable()
         {

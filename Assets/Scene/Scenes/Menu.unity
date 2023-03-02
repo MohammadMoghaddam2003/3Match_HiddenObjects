@@ -4499,6 +4499,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1731809722147717947, guid: 415eaf9c81f153e4ab84be5541fb5b74,
         type: 3}
+      propertyPath: playerWin
+      value: 
+      objectReference: {fileID: 11400000, guid: 3d2dd48193e0c9a4bb1ccea3d2781f6d,
+        type: 2}
+    - target: {fileID: 1731809722147717947, guid: 415eaf9c81f153e4ab84be5541fb5b74,
+        type: 3}
+      propertyPath: playerLose
+      value: 
+      objectReference: {fileID: 11400000, guid: 96f52b047ac4c35499055c46b6f240d2,
+        type: 2}
+    - target: {fileID: 1731809722147717947, guid: 415eaf9c81f153e4ab84be5541fb5b74,
+        type: 3}
       propertyPath: loadingPage
       value: 
       objectReference: {fileID: 0}
