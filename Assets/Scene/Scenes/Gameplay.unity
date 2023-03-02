@@ -3908,12 +3908,12 @@ PrefabInstance:
     - target: {fileID: 8331972795600807832, guid: 5e99fcbae44f7654b80a769d05863b4e,
         type: 3}
       propertyPath: maxSecond
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8331972795600807832, guid: 5e99fcbae44f7654b80a769d05863b4e,
         type: 3}
       propertyPath: minSecond
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8331972795600807832, guid: 5e99fcbae44f7654b80a769d05863b4e,
         type: 3}
