@@ -3022,7 +3022,7 @@ MonoBehaviour:
   playButton: {fileID: 1690219246}
   playingButtonColor: {r: 0.09019608, g: 1, b: 0.12941177, a: 1}
   unPlayingButtonColor: {r: 0.27450982, g: 0.27450982, b: 0.27450982, a: 1}
-  maxUserNameCharacter: 15
+  maxUserNameCharacter: 8
 --- !u!1 &1313224823
 GameObject:
   m_ObjectHideFlags: 0

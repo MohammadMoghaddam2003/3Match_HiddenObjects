@@ -1,5 +1,6 @@
 using System.Collections;
 using Game_Manager;
+using GameplayAssets.Opponent;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ namespace Controllers.Level
     {
         [SerializeField] private Slider slider;
         [SerializeField] private TextMeshProUGUI progressText;
+        [SerializeField] private OpponentFinder opponentFinder;
 
         private Coroutine _loadingProgress;
         private LevelController _levelController;
@@ -32,6 +34,7 @@ namespace Controllers.Level
             while (slider.value != 1)
             {
                 if (time == progressWait) yield return new WaitForSeconds(waitTime);
+                if (time == progressWait) opponentFinder.ShowOpponent();
 
                 time++;
                 progressText.text = "Loading... " + time + "%"; 
