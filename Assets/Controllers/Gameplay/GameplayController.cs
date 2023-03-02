@@ -32,17 +32,9 @@ namespace Controllers.Gameplay
 
         public void SelectedItem()
         {
-            if (_collectableItem is null)
-            {
-                if (!CheckValidation(gameplayData.SelectedItemTag.ToString()))
-                {
-                    gameplayData.SelectedItemValidation = false;
-                    return ;
-                }
-                
-                _collectableItem = gameplayData.SelectedItemTag;
-            }
-            else if (gameplayData.SelectedItemTag.ToString() != _collectableItem.ToString())
+             _collectableItem ??= gameplayData.SelectedItemTag;
+            
+            if (gameplayData.SelectedItemTag.ToString() != _collectableItem.ToString())
             {
                 gameplayData.SelectedItemValidation = false;
                 return;
@@ -54,17 +46,17 @@ namespace Controllers.Gameplay
         }
 
 
-        private bool CheckValidation(string tag)
-        {
-            int length = gameplayData.TargetItemControllers.Length;
-            
-            for (int i = 0; i < length; i++)
-            {
-                if (tag == gameplayData.TargetItemControllers[i]) return true;
-            }
-
-            return false;
-        }
+        // private bool CheckValidation(string tag)
+        // {
+        //     int length = gameplayData.TargetItemControllers.Length;
+        //     
+        //     for (int i = 0; i < length; i++)
+        //     {
+        //         if (tag == gameplayData.TargetItemControllers[i]) return true;
+        //     }
+        //
+        //     return false;
+        // }
 
         private void AddItem() => _selectedItemsCount++;
         

@@ -12,19 +12,15 @@ namespace GameplayAssets.LevelGenerator
         [SerializeField] private Transform[] generatePos = new Transform[3];
 
         
-        private List<GameObject> _targetItems = new List<GameObject>();
-        private List<GameObject> _otherItems = new List<GameObject>();
+        private List<GameObject> _items = new List<GameObject>();
         private string[] _targetItemController;
         
         
         void Start()
         {
-            ChooseItems(gameplayData.GetTargetItemCount,_targetItems);
-            SetTargetsToData();
-            StartGeneration(_targetItems);
-            
-            ChooseItems(gameplayData.GetOtherItemCount,_otherItems);
-            StartGeneration(_otherItems);
+            ChooseItems(gameplayData.GetItemCount,_items);
+            // SetTargetsToData();
+            StartGeneration(_items);
         }
         
         
@@ -39,17 +35,17 @@ namespace GameplayAssets.LevelGenerator
         }
 
         
-        private void SetTargetsToData()
-        {
-            _targetItemController = new string[gameplayData.GetTargetItemCount];
-            
-            for (int i = 0; i < _targetItems.Count; i++)
-            {
-                _targetItemController[i] = _targetItems[i].tag;
-            }
-
-            gameplayData.TargetItemControllers = _targetItemController;
-        }
+        // private void SetTargetsToData()
+        // {
+        //     _targetItemController = new string[gameplayData.GetTargetItemCount];
+        //     
+        //     for (int i = 0; i < _targetItems.Count; i++)
+        //     {
+        //         _targetItemController[i] = _targetItems[i].tag;
+        //     }
+        //
+        //     gameplayData.TargetItemControllers = _targetItemController;
+        // }
 
 
         private void StartGeneration(List<GameObject> list)

@@ -6,28 +6,18 @@ namespace Data.Data
     [CreateAssetMenu(menuName = "Data/Gameplay Data", fileName = "Gameplay Data")]
     public class GameplayData : ScriptableObject
     {
-       [SerializeField] private string[] targetItemControllers;
        [SerializeField] private Transform selectedBasket;
        [SerializeField] private Transform unUsingBasket;
        [SerializeField] private Vector3 itemTarget;
        [SerializeField] private Vector3 gatheringPos;
        [SerializeField] private bool selectedItemValidation;
-       [SerializeField] private int targetItemCount;
-       [SerializeField] private int otherItemCount;
+       [SerializeField] private int itemCount;
 
        
         private StringBuilder _selectedItemTag;
 
        
         
-        
-        
-        
-        public string[] TargetItemControllers
-        {
-            get => targetItemControllers;
-            set => targetItemControllers = value;
-        }
         
         
         public StringBuilder SelectedItemTag
@@ -72,8 +62,6 @@ namespace Data.Data
         }
         
         
-        public int GetTargetItemCount { get => targetItemCount; }
-        
-        public int GetOtherItemCount { get => otherItemCount; }
+        public int GetItemCount { get => itemCount; }
     }
 }
