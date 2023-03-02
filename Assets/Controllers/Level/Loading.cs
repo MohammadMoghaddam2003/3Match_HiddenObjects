@@ -25,8 +25,8 @@ namespace Controllers.Level
 
         private IEnumerator LoadingProgress()
         {
-            int progressWait = Random.Range(0, 80);
-            int waitTime = Random.Range(2, 6);
+            int progressWait = Random.Range(20, 80);
+            int waitTime = Random.Range(2, 5);
             float time = 0;
 
             while (slider.value != 1)
