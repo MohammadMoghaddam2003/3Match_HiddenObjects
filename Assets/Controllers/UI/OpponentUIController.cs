@@ -1,5 +1,5 @@
 using Data.Data;
-using Controllers.Data;
+using Game_Manager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,7 +21,7 @@ namespace Controllers.UI
             _stars = stars;
             _collectedStar = collectedStarSprite;
             _username = username;
-            _opponentInfo = DataController.Instance.GetOpponentInfo;
+            _opponentInfo = GameManager.Instance.GetOpponentInfo;
         }
 
 

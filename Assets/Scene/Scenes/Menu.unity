@@ -2189,6 +2189,12 @@ PrefabInstance:
       objectReference: {fileID: 300759383}
     - target: {fileID: 8961363186225698081, guid: defc136c8642ac648811ec403a170ccc,
         type: 3}
+      propertyPath: dataController
+      value: 
+      objectReference: {fileID: 11400000, guid: 293ec2977422ade48a9db05e1be41fd6,
+        type: 2}
+    - target: {fileID: 8961363186225698081, guid: defc136c8642ac648811ec403a170ccc,
+        type: 3}
       propertyPath: levelController
       value: 
       objectReference: {fileID: 570544636}

@@ -1,5 +1,5 @@
 using Data.Data;
-using Controllers.Data;
+using Game_Manager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -31,7 +31,7 @@ namespace Controllers.Menu
 
         private void InitialSetting()
         {
-            _playerInfo = DataController.Instance.GetPlayerInfo;
+            _playerInfo = GameManager.Instance.GetPlayerInfo;
             scrollbar.value = 0;
             playButton.color = unPlayingButtonColor;
             _canPlay = false;

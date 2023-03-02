@@ -1,4 +1,6 @@
+using Controllers.Data;
 using Controllers.Level;
+using Data.Data;
 using Scene_Loader;
 using UnityEngine;
 
@@ -8,6 +10,7 @@ namespace Game_Manager
     {
         [SerializeField] private SceneLoader sceneLoader;
         [SerializeField] private LevelController levelController;
+        [SerializeField] private DataController dataController;
 
         
         public static GameManager Instance;
@@ -15,6 +18,9 @@ namespace Game_Manager
         
         public SceneLoader GetSceneLoader { get => sceneLoader; }
         public LevelController GetLevelController { get => levelController; }
+        public PlayerInfo GetPlayerInfo { get => dataController.GetPlayerInfo; }
+        public PlayerInfo GetOpponentInfo { get => dataController.GetOpponentInfo; }
+        public GameplayData GetGameplayData { get => dataController.GetGameplayData; }
 
 
 

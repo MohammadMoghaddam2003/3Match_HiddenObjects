@@ -10,11 +10,9 @@ namespace Controllers.Data
         [SerializeField] private PlayerInfo opponentInfo;
         [SerializeField] private GameplayData gameplayData;
 
+        
 
-
-
-        public static DataController Instance;
-
+    
         public PlayerInfo GetPlayerInfo { get => playerInfo; }
         public PlayerInfo GetOpponentInfo { get => opponentInfo; }
         public GameplayData GetGameplayData { get => gameplayData; }
@@ -22,8 +20,6 @@ namespace Controllers.Data
 
 
         protected DataController() { }
-
-        private void OnEnable() => Instance = this;
     }
 }
 
