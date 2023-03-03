@@ -1,7 +1,5 @@
-using System;
 using Data.Events;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -50,6 +48,8 @@ namespace Controllers.UI
         public void ShowWinPanel() => winPanel.SetActive(true);
         public void ShowLosePanel() => losePanel.SetActive(true);
         public void PlayAgain() => playAgainEvent.Raise();
+        public Vector3 GetPlayerStar { get => _playerUIController.GetStar; }
+        public Vector3 GetTargetScale { get => playerStars[0].transform.localScale; }
 
         public void GoStart() => goStartEvent.Raise();
          

@@ -33,9 +33,6 @@ namespace Controllers.UI
         }
 
 
-        public Vector3 GetStar { get => _stars[_collectedStarsIndex].transform.position; }
-
-
 
         public void ChangeCollectedStarSprite()
         {

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Text;
+using Controllers.UI;
 using Data.Data;
 using Data.Events;
+using GameplayAssets.Star;
 using UnityEngine;
 
 namespace Controllers.Gameplay
@@ -13,11 +15,16 @@ namespace Controllers.Gameplay
         [SerializeField] private ParticleSystem collectParticleSystem;
         [SerializeField] private GameplayData gameplayData;
         [SerializeField] private EventSO completeItemEvent;
+        [SerializeField] private GameObject star;
+        [SerializeField] private UIController uIController;
+        [SerializeField] private Transform canvas;
         [SerializeField] private int maxStarsCount = 9;
 
         
         private static StringBuilder _collectableItem;
 
+
+        private StarMovement _starMovement;
         private int _selectedItemsCount;
         private int _starsCount;
         private int _collectParticleManage;
@@ -57,7 +64,8 @@ namespace Controllers.Gameplay
 
                 yield return new WaitForSeconds(.6f);
                 completeItemEvent.Raise();
-                
+
+                AddStar();
                 ClearSelectHistory();
                 ResetGameplayData();
             }
@@ -83,11 +91,17 @@ namespace Controllers.Gameplay
             _collectableItem = null;
         }
 
-        public void AddStar()
+        private void AddStar()
         {
-            _starsCount++;
-        
             // Get star from pooling object and get a pos to this parameter
+            Vector3 pos = Camera.main.WorldToScreenPoint(gatheringPos.position);
+                
+            _starMovement = Instantiate(star,pos , Quaternion.identity).GetComponent<StarMovement>();
+            _starMovement.gameObject.transform.SetParent(canvas);
+            _starMovement.SetUIController = uIController;
+            _starMovement.StartMove();
+            
+            _starsCount++;
 
             WinController();
         }

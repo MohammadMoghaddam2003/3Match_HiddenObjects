@@ -3696,9 +3696,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
         type: 3}
+      propertyPath: star
+      value: 
+      objectReference: {fileID: 2926916019857236570, guid: 9873681d06b37e94298863c5ae9575d0,
+        type: 3}
+    - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1082498501}
+    - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
+        type: 3}
       propertyPath: gatheringPos
       value: 
       objectReference: {fileID: 2074199457}
+    - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
+        type: 3}
+      propertyPath: uIController
+      value: 
+      objectReference: {fileID: 2765150325108415319}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c573558f14d0ec54bb63125cdffe7418, type: 3}
 --- !u!114 &7436137422576754116 stripped
