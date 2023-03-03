@@ -15,7 +15,7 @@ MonoBehaviour:
   gameplayData: {fileID: 11400000, guid: 75ef377627f6c464bbfe7651fa62f032, type: 2}
   rotateDirection: {x: 0, y: 1, z: 0}
   height: 1
-  moveSpeed: 8
+  moveSpeed: 15
   fingerMoveSpeed: 90
   rotateSpeed: 20
   resetRotationSpeed: 10
