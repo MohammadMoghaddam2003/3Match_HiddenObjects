@@ -20,23 +20,41 @@ namespace Controllers.Level
 
         private void Start() => _sceneLoader = GameManager.Instance.GetSceneLoader;
 
-        
-        
-        public void LoadLevel() => _sceneLoader.GoToLoading();
 
-        public void StartMatch() => _sceneLoader.LoadGameplayScene();
+        public void GoToStart()
+        {
+            StartTime();
+            _sceneLoader.LoadMenuScene();  
+        } 
+        
+        public void LoadLevel()
+        {
+            StartTime();
+            _sceneLoader.GoToLoading();
+        } 
+
+        public void StartMatch()
+        {
+            StartTime();
+            _sceneLoader.LoadGameplayScene();
+        } 
 
         public void PlayerLose()
         {
             playerLose.Raise();
-            Time.timeScale = 0;
+            StopTime();
         }
 
         public void PlayerWin()
         {
             playerWin.Raise();
-            Time.timeScale = 0;
+            StopTime();
         }
+
+
+        private void StartTime() => Time.timeScale = 1;
+        private void StopTime() => Time.timeScale = 0;
+
 
     }
 }

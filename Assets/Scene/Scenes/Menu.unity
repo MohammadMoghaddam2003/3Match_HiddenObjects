@@ -1100,18 +1100,69 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 472134501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &561035358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1731809722147717948, guid: 415eaf9c81f153e4ab84be5541fb5b74,
+    type: 3}
+  m_PrefabInstance: {fileID: 1731809722651054791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &570544636 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1731809722147717947, guid: 415eaf9c81f153e4ab84be5541fb5b74,
     type: 3}
   m_PrefabInstance: {fileID: 1731809722651054791}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 561035358}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efdfbf7521496ca4482c4748d5c57910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &570544638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561035358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventListenerHandler:
+  - eventSO: {fileID: 11400000, guid: 3b7750cbcbeab3e46b15004bcd4c7bbb, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 570544636}
+          m_TargetAssemblyTypeName: Controllers.Level.LevelController, Assembly-CSharp
+          m_MethodName: LoadLevel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventSO: {fileID: 11400000, guid: 2c9b70ac3f58ec34f882971630999bf5, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 570544636}
+          m_TargetAssemblyTypeName: Controllers.Level.LevelController, Assembly-CSharp
+          m_MethodName: GoToStart
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &607741347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2187,12 +2238,6 @@ PrefabInstance:
       propertyPath: sceneLoader
       value: 
       objectReference: {fileID: 300759383}
-    - target: {fileID: 8961363186225698081, guid: defc136c8642ac648811ec403a170ccc,
-        type: 3}
-      propertyPath: dataController
-      value: 
-      objectReference: {fileID: 11400000, guid: 293ec2977422ade48a9db05e1be41fd6,
-        type: 2}
     - target: {fileID: 8961363186225698081, guid: defc136c8642ac648811ec403a170ccc,
         type: 3}
       propertyPath: levelController
@@ -4496,23 +4541,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1731809722147717947, guid: 415eaf9c81f153e4ab84be5541fb5b74,
-        type: 3}
-      propertyPath: playerWin
-      value: 
-      objectReference: {fileID: 11400000, guid: 3d2dd48193e0c9a4bb1ccea3d2781f6d,
-        type: 2}
-    - target: {fileID: 1731809722147717947, guid: 415eaf9c81f153e4ab84be5541fb5b74,
-        type: 3}
-      propertyPath: playerLose
-      value: 
-      objectReference: {fileID: 11400000, guid: 96f52b047ac4c35499055c46b6f240d2,
-        type: 2}
-    - target: {fileID: 1731809722147717947, guid: 415eaf9c81f153e4ab84be5541fb5b74,
-        type: 3}
-      propertyPath: loadingPage
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1731809722147717948, guid: 415eaf9c81f153e4ab84be5541fb5b74,
         type: 3}

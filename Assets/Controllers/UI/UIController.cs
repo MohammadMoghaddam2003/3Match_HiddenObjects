@@ -1,4 +1,5 @@
 using System;
+using Data.Events;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -17,13 +18,12 @@ namespace Controllers.UI
         [SerializeField] private TextMeshProUGUI opponentUsername;
         [SerializeField] private GameObject losePanel;
         [SerializeField] private GameObject winPanel;
+        [SerializeField] private EventSO playAgainEvent;
+        [SerializeField] private EventSO goStartEvent;
 
 
         private PlayerUIController _playerUIController;
         private OpponentUIController _opponentUIController;
-
-
-        private void Awake() => DontDestroyOnLoad(this.gameObject);
 
 
         private void OnEnable()
@@ -49,5 +49,9 @@ namespace Controllers.UI
         public void ChangeOpponentStarSprite() => _opponentUIController.ChangeCollectedStarSprite();
         public void ShowWinPanel() => winPanel.SetActive(true);
         public void ShowLosePanel() => losePanel.SetActive(true);
+        public void PlayAgain() => playAgainEvent.Raise();
+
+        public void GoStart() => goStartEvent.Raise();
+         
     }
 }

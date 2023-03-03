@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efdfbf7521496ca4482c4748d5c57910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingPage: {fileID: 0}
+  playerLose: {fileID: 11400000, guid: 96f52b047ac4c35499055c46b6f240d2, type: 2}
+  playerWin: {fileID: 11400000, guid: 3d2dd48193e0c9a4bb1ccea3d2781f6d, type: 2}
+  playAgainEvent: {fileID: 11400000, guid: 3b7750cbcbeab3e46b15004bcd4c7bbb, type: 2}
+  goStartEvent: {fileID: 11400000, guid: 2c9b70ac3f58ec34f882971630999bf5, type: 2}

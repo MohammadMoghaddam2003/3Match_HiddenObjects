@@ -369,7 +369,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 295232563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2765150325108415319}
+        m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
+        m_MethodName: GoStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &295232563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,7 +802,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 541480433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2765150325108415319}
+        m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
+        m_MethodName: PlayAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &541480433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +935,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 543285720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2765150325108415319}
+        m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
+        m_MethodName: PlayAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &543285720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,8 +963,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_RaycastPadding: {x: 1, y: 1, z: 1, w: 1}
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -950,6 +986,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543285717}
   m_CullTransparentMesh: 1
+--- !u!1 &588325316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 588325317}
+  - component: {fileID: 588325319}
+  - component: {fileID: 588325318}
+  m_Layer: 5
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &588325317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588325316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1082498501}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &588325318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588325316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &588325319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588325316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &736912943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1243,7 @@ GameObject:
   - component: {fileID: 1011218595}
   - component: {fileID: 1011218594}
   - component: {fileID: 1011218596}
+  - component: {fileID: 1011218597}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -1220,6 +1325,51 @@ MonoBehaviour:
   timerText: {fileID: 1529938552}
   finishedTimeEvent: {fileID: 11400000, guid: 06336bc9b1eb5594ca51a9f0b50f6e07, type: 2}
   time: 3
+--- !u!114 &1011218597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011218592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventListenerHandler:
+  - eventSO: {fileID: 11400000, guid: 96f52b047ac4c35499055c46b6f240d2, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1011218596}
+          m_TargetAssemblyTypeName: Controllers.UI.Timer, Assembly-CSharp
+          m_MethodName: GameFinished
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventSO: {fileID: 11400000, guid: 3d2dd48193e0c9a4bb1ccea3d2781f6d, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1011218596}
+          m_TargetAssemblyTypeName: Controllers.UI.Timer, Assembly-CSharp
+          m_MethodName: GameFinished
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1032836102 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3017491931566560852, guid: b2cccd504e6a8334080d24e4f48e0348,
@@ -1329,6 +1479,7 @@ RectTransform:
   - {fileID: 1011218593}
   - {fileID: 1241919995}
   - {fileID: 1624557511}
+  - {fileID: 588325317}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2298,7 +2449,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2028841729}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2765150325108415319}
+        m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
+        m_MethodName: GoStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2028841729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3065,63 +3228,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2765150325108415318}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2765150325108415320}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbd3b391dc5faef45a7263cabdbf7ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2765150325108415320 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2765150324209376358, guid: 8a7e4ef4dfb288f4d8f7000213c305c4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2765150325108415318}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2765150325108415321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2765150325108415320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventListenerHandler:
-  - eventSO: {fileID: 11400000, guid: 3d2dd48193e0c9a4bb1ccea3d2781f6d, type: 2}
-    reponse:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2765150325108415319}
-          m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
-          m_MethodName: ShowWinPanel
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventSO: {fileID: 11400000, guid: 96f52b047ac4c35499055c46b6f240d2, type: 2}
-    reponse:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2765150325108415319}
-          m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
-          m_MethodName: ShowLosePanel
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &7179403660441800882
 PrefabInstance:
   m_ObjectHideFlags: 0
