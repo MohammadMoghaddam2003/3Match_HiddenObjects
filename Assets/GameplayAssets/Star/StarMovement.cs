@@ -1,6 +1,7 @@
 using System.Collections;
 using Controllers.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GameplayAssets.Star
 {
@@ -14,6 +15,7 @@ namespace GameplayAssets.Star
         private Rigidbody _rigidbody;
         private Coroutine _move;
         private UIController _uiController;
+        private Image _image;
         private Vector3 _targetPos;
         private Vector3 _targetScale;
 
@@ -22,7 +24,12 @@ namespace GameplayAssets.Star
 
         private void Awake() => _rigidbody = GetComponent<Rigidbody>();
 
-        public void StartMove() => _move = StartCoroutine(Move());
+        public void StartMove()
+        {
+            _image = GetComponent<Image>();
+            _image.enabled = false;
+            _move = StartCoroutine(Move());
+        } 
 
 
         private IEnumerator Move()
@@ -31,7 +38,8 @@ namespace GameplayAssets.Star
             _targetScale = _uiController.GetTargetScale;
             speed *= Screen.width;    
             yield return new WaitForSeconds(waitTime);
-            _rigidbody.useGravity = false; 
+            _rigidbody.useGravity = false;
+            _image.enabled = true;
 
             while (Vector3.Distance(transform.position,_targetPos) > 60f)
             {
