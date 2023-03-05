@@ -1488,6 +1488,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!198 &1168837041 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3508711517143952352, guid: dbb943b11978e4f44928ceb1283ad0fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 8509440735652422633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1170993220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3715,6 +3721,11 @@ PrefabInstance:
       propertyPath: uIController
       value: 
       objectReference: {fileID: 2765150325108415319}
+    - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
+        type: 3}
+      propertyPath: collectParticleSystem
+      value: 
+      objectReference: {fileID: 1168837041}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c573558f14d0ec54bb63125cdffe7418, type: 3}
 --- !u!114 &7436137422576754116 stripped
@@ -4117,42 +4128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1172359691, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1172359691, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6500003
-      objectReference: {fileID: 0}
-    - target: {fileID: 1172359691, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1334490480, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1334490480, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6500003
-      objectReference: {fileID: 0}
-    - target: {fileID: 1334490480, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520082951, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520082951, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6500003
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520082951, guid: dbb943b11978e4f44928ceb1283ad0fc, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 9176536857355150037, guid: dbb943b11978e4f44928ceb1283ad0fc,
         type: 3}
       propertyPath: m_Name

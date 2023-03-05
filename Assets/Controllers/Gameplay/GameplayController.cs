@@ -35,7 +35,6 @@ namespace Controllers.Gameplay
         
         private void Awake() => ResetGameplayData();
 
-        private void Start() => collectParticleSystem = Instantiate(collectParticleSystem, gatheringPos.position, Quaternion.identity);
 
         public void SelectedItem()
         {
@@ -114,8 +113,7 @@ namespace Controllers.Gameplay
 
             _collectParticleManage = 0;
             
-            // ***************** After create collect particle, Uncomment below commented method 
-            //PlayCollectParticle();
+            PlayCollectParticle();
         }
         
         private void WinController()
