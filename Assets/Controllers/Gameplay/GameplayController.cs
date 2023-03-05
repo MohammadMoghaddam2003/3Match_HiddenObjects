@@ -11,13 +11,14 @@ namespace Controllers.Gameplay
     public class GameplayController : MonoBehaviour
     {
         [SerializeField] private Transform gatheringPos;
+        [SerializeField] private Transform canvas;
+        [SerializeField] private Transform starInitialPos;
         [SerializeField] private Transform[] starsPos;
         [SerializeField] private ParticleSystem collectParticleSystem;
         [SerializeField] private GameplayData gameplayData;
         [SerializeField] private EventSO completeItemEvent;
         [SerializeField] private GameObject star;
         [SerializeField] private UIController uIController;
-        [SerializeField] private Transform canvas;
         [SerializeField] private int maxStarsCount = 9;
 
         
@@ -93,10 +94,10 @@ namespace Controllers.Gameplay
         private void AddStar()
         {
             // Get star from pooling object and get a pos to this parameter
-            Vector3 pos = Camera.main.WorldToScreenPoint(gatheringPos.position);
-                
-            _starMovement = Instantiate(star,pos , Quaternion.identity).GetComponent<StarMovement>();
+
+            _starMovement = Instantiate(star,starInitialPos.position , Quaternion.identity).GetComponent<StarMovement>();
             _starMovement.gameObject.transform.SetParent(canvas);
+            _starMovement.SetDefault();
             _starMovement.SetUIController = uIController;
             _starMovement.StartMove();
             

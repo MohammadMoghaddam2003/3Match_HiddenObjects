@@ -16,6 +16,7 @@ namespace Controllers.UI
         [SerializeField] private TextMeshProUGUI opponentUsername;
         [SerializeField] private GameObject losePanel;
         [SerializeField] private GameObject winPanel;
+        [SerializeField] private GameObject[] particleSystems;
         [SerializeField] private EventSO playAgainEvent;
         [SerializeField] private EventSO goStartEvent;
 
@@ -45,13 +46,28 @@ namespace Controllers.UI
 
         public void ChangePlayerStarSprite() => _playerUIController.ChangeCollectedStarSprite();
         public void ChangeOpponentStarSprite() => _opponentUIController.ChangeCollectedStarSprite();
-        public void ShowWinPanel() => winPanel.SetActive(true);
+
+        public void ShowWinPanel()
+        {
+            winPanel.SetActive(true);
+            PlayParticles();
+        } 
+        
         public void ShowLosePanel() => losePanel.SetActive(true);
         public void PlayAgain() => playAgainEvent.Raise();
         public Vector3 GetPlayerStar { get => _playerUIController.GetStar; }
         public Vector3 GetTargetScale { get => playerStars[0].transform.localScale; }
 
         public void GoStart() => goStartEvent.Raise();
+
+
+        private void PlayParticles()
+        {
+            for (int i = 0; i < particleSystems.Length; i++)
+            {
+                particleSystems[i].SetActive(true);
+            }
+        }
          
     }
 }

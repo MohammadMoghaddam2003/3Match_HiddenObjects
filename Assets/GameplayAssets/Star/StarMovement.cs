@@ -7,12 +7,13 @@ namespace GameplayAssets.Star
 {
     public class StarMovement : MonoBehaviour
     {
+        [SerializeField] private Vector3 defaultScale;
+        [SerializeField] private Vector3 defaultRotation;
         [SerializeField] private float speed = 20;
         [SerializeField] private float waitTime = .3f;
     
 
         
-        private Rigidbody _rigidbody;
         private Coroutine _move;
         private UIController _uiController;
         private Image _image;
@@ -22,7 +23,6 @@ namespace GameplayAssets.Star
         public UIController SetUIController { set => _uiController = value; }
 
 
-        private void Awake() => _rigidbody = GetComponent<Rigidbody>();
 
         public void StartMove()
         {
@@ -36,16 +36,14 @@ namespace GameplayAssets.Star
         {
             _targetPos = _uiController.GetPlayerStar;
             _targetScale = _uiController.GetTargetScale;
-            speed *= Screen.width;    
             yield return new WaitForSeconds(waitTime);
-            _rigidbody.useGravity = false;
             _image.enabled = true;
 
-            while (Vector3.Distance(transform.position,_targetPos) > 60f)
+            while (Vector3.Distance(new Vector3( transform.position.x,0 ,  transform.position.z),new Vector3(_targetPos.x,0,_targetPos.z)) >.45f)
             {
-                Vector3 direction = _targetPos - transform.position;
+                Vector3 direction = _targetPos-transform.position;
                 ChangeScale();
-                _rigidbody.velocity = (direction.normalized * speed) * Time.deltaTime;
+                transform.Translate( (direction.normalized * speed) * Time.deltaTime);
                 yield return null;
             }
             
@@ -56,5 +54,12 @@ namespace GameplayAssets.Star
         
         
         private void ChangeScale() => transform.localScale = Vector3.Lerp(transform.localScale,_targetScale,(speed * 10) * Time.deltaTime);
+
+
+        public void SetDefault()
+        {
+            transform.localScale = defaultScale;
+            transform.localRotation = Quaternion.Euler(defaultRotation);
+        }
     }
 }
