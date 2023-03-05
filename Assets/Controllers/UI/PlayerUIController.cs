@@ -39,14 +39,20 @@ namespace Controllers.UI
 
         public void ChangeCollectedStarSprite()
         {
-            _stars[_collectedStarsIndex].sprite = _collectedStar;
 
             if (_collectedStarsIndex == _stars.Length - 1)
             {
                 GameManager.Instance.GetLevelController.PlayerWin();
                 return;
             }
+            
+            PlayAnimation(_stars[_collectedStarsIndex].gameObject.GetComponent<Animation>());
+            _stars[_collectedStarsIndex].sprite = _collectedStar;
             _collectedStarsIndex++;
         }
+
+
+        private void PlayAnimation(Animation starAnimator) => starAnimator.Play();
+        
     }
 }

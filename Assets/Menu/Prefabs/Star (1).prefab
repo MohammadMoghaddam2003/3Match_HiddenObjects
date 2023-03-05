@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3064746491759167063}
   - component: {fileID: 5567648423990603834}
   - component: {fileID: 6417437560853506237}
+  - component: {fileID: 3541154667134951495}
   m_Layer: 5
   m_Name: Star (1)
   m_TagString: Untagged
@@ -28,7 +29,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,3 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!111 &3541154667134951495
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108790122702750149}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b9a86ab4635f64c4884d70c8533b3657, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b9a86ab4635f64c4884d70c8533b3657, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

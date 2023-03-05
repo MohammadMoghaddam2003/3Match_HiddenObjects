@@ -3747,6 +3747,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1082498501}
     m_Modifications:
+    - target: {fileID: 4741073184158168433, guid: b2cccd504e6a8334080d24e4f48e0348,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741073184158168433, guid: b2cccd504e6a8334080d24e4f48e0348,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: b9a86ab4635f64c4884d70c8533b3657, type: 2}
     - target: {fileID: 5914860359259202840, guid: b2cccd504e6a8334080d24e4f48e0348,
         type: 3}
       propertyPath: m_SizeDelta.x
