@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 2803644}
   - component: {fileID: 2803646}
   - component: {fileID: 2803645}
+  - component: {fileID: 2803647}
   m_Layer: 5
   m_Name: Cup
   m_TagString: Untagged
@@ -199,6 +200,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2803643}
   m_CullTransparentMesh: 1
+--- !u!111 &2803647
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2803643}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5942bcd518bded54c9aebc4628064415, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5942bcd518bded54c9aebc4628064415, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &35225251 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3017491931770384471, guid: b2cccd504e6a8334080d24e4f48e0348,
@@ -5122,6 +5139,7 @@ GameObject:
   - component: {fileID: 240654470}
   - component: {fileID: 240654472}
   - component: {fileID: 240654471}
+  - component: {fileID: 240654473}
   m_Layer: 5
   m_Name: Trompet (1)
   m_TagString: Untagged
@@ -5187,6 +5205,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240654469}
   m_CullTransparentMesh: 1
+--- !u!111 &240654473
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240654469}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 65c980251eaa6f2479d15df38869a7b4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 65c980251eaa6f2479d15df38869a7b4, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &295232560
 GameObject:
   m_ObjectHideFlags: 0
@@ -6670,7 +6704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377092540}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -51, y: 189, z: -22}
+  m_LocalPosition: {x: -51, y: 189, z: -4028}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6769,7 +6803,7 @@ ParticleSystem:
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 0
+  autoRandomSeed: 1
   startDelay:
     serializedVersion: 2
     minMaxState: 0
@@ -11952,6 +11986,7 @@ GameObject:
   - component: {fileID: 1842831555}
   - component: {fileID: 1842831557}
   - component: {fileID: 1842831556}
+  - component: {fileID: 1842831558}
   m_Layer: 5
   m_Name: Trompet
   m_TagString: Untagged
@@ -12017,6 +12052,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842831554}
   m_CullTransparentMesh: 1
+--- !u!111 &1842831558
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842831554}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 65c980251eaa6f2479d15df38869a7b4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 65c980251eaa6f2479d15df38869a7b4, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &1843806153 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3925646157346211333, guid: b2cccd504e6a8334080d24e4f48e0348,
@@ -14283,7 +14334,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -19078,9 +19129,9 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 0
+  autoRandomSeed: 1
   startDelay:
     serializedVersion: 2
     minMaxState: 0
@@ -23933,7 +23984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8579877888665058378}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 58, y: 189, z: -22}
+  m_LocalPosition: {x: 58, y: 189, z: -4028}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -24072,7 +24123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8700434288185235827}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 116.00005, z: -0.000014305114}
+  m_LocalPosition: {x: 0, y: 116, z: -4006}
   m_LocalScale: {x: 80, y: 80, z: 80}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -38232,9 +38283,9 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 0
+  autoRandomSeed: 1
   startDelay:
     serializedVersion: 2
     minMaxState: 0
