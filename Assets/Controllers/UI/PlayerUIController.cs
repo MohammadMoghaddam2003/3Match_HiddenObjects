@@ -39,6 +39,9 @@ namespace Controllers.UI
 
         public void ChangeCollectedStarSprite()
         {
+            _stars[_collectedStarsIndex].sprite = _collectedStar;
+            PlayAnimation(_stars[_collectedStarsIndex].gameObject.GetComponent<Animation>());
+
 
             if (_collectedStarsIndex == _stars.Length - 1)
             {
@@ -46,8 +49,7 @@ namespace Controllers.UI
                 return;
             }
             
-            PlayAnimation(_stars[_collectedStarsIndex].gameObject.GetComponent<Animation>());
-            _stars[_collectedStarsIndex].sprite = _collectedStar;
+            
             _collectedStarsIndex++;
         }
 
