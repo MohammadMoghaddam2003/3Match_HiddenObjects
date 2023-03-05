@@ -1,3 +1,4 @@
+using System.Collections;
 using Data.Events;
 using TMPro;
 using UnityEngine;
@@ -50,7 +51,7 @@ namespace Controllers.UI
         public void ShowWinPanel()
         {
             winPanel.SetActive(true);
-            PlayParticles();
+            StartCoroutine(PlayParticles());
         } 
         
         public void ShowLosePanel() => losePanel.SetActive(true);
@@ -61,10 +62,11 @@ namespace Controllers.UI
         public void GoStart() => goStartEvent.Raise();
 
 
-        private void PlayParticles()
+        private IEnumerator PlayParticles()
         {
             for (int i = 0; i < particleSystems.Length; i++)
             {
+                yield return new WaitForSeconds(.2f);
                 particleSystems[i].SetActive(true);
             }
         }
