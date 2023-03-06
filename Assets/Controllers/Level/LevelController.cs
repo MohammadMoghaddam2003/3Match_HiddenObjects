@@ -1,3 +1,4 @@
+using Controllers.Audio;
 using Controllers.UI;
 using Data.Events;
 using Scene_Loader;
@@ -13,12 +14,17 @@ namespace Controllers.Level
         
         private SceneLoader _sceneLoader;
         private UIController _uiController;
+        private AudioController _audioController;
         
         
         
         private void Awake() => DontDestroyOnLoad(this.gameObject);
 
-        private void Start() => _sceneLoader = GameManager.Instance.GetSceneLoader;
+        private void Start()
+        {
+            _sceneLoader = GameManager.Instance.GetSceneLoader;
+            _audioController = GameManager.Instance.GetAudioController;
+        } 
 
 
         public void GoToStart()
@@ -42,12 +48,16 @@ namespace Controllers.Level
         public void PlayerLose()
         {
             playerLose.Raise();
+            _audioController.StopMusic();
+            _audioController.LoseSound();
             StopTime();
         }
 
         public void PlayerWin()
         {
             playerWin.Raise();
+            _audioController.StopMusic();
+            _audioController.WinSound();
             StopTime();
         }
 

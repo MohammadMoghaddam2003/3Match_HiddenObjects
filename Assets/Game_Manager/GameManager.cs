@@ -1,3 +1,4 @@
+using Controllers.Audio;
 using Controllers.Data;
 using Controllers.Level;
 using Data.Data;
@@ -11,6 +12,7 @@ namespace Game_Manager
         [SerializeField] private SceneLoader sceneLoader;
         [SerializeField] private LevelController levelController;
         [SerializeField] private DataController dataController;
+        [SerializeField] private AudioController audioController;
 
         
         public static GameManager Instance;
@@ -21,6 +23,7 @@ namespace Game_Manager
         public PlayerInfo GetPlayerInfo { get => dataController.GetPlayerInfo; }
         public PlayerInfo GetOpponentInfo { get => dataController.GetOpponentInfo; }
         public GameplayData GetGameplayData { get => dataController.GetGameplayData; }
+        public AudioController GetAudioController { get => audioController; }
 
 
 

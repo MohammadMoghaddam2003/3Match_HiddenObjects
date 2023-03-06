@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Text;
+using Controllers.Audio;
 using Controllers.UI;
 using Data.Data;
 using Data.Events;
+using Game_Manager;
 using GameplayAssets.Star;
 using UnityEngine;
 
@@ -26,6 +29,7 @@ namespace Controllers.Gameplay
 
 
         private StarMovement _starMovement;
+        private AudioController _audioController;
         private int _selectedItemsCount;
         private int _starsCount;
         private int _collectParticleManage;
@@ -35,6 +39,12 @@ namespace Controllers.Gameplay
         
         
         private void Awake() => ResetGameplayData();
+
+        private void Start()
+        {
+            _audioController = GameManager.Instance.GetAudioController;
+            PlayMusic();
+        } 
 
 
         public void SelectedItem()
@@ -64,13 +74,17 @@ namespace Controllers.Gameplay
 
                 yield return new WaitForSeconds(.6f);
                 completeItemEvent.Raise();
+                PlayCompleteSound();
 
                 AddStar();
                 ClearSelectHistory();
                 ResetGameplayData();
             }
         }
-        
+
+        private void PlayMusic() => _audioController.PlayMusic(); 
+        private void PlayCompleteSound() => _audioController.CompleteCollect(); 
+
         private void SetGatheringPos() => gameplayData.GatheringPos = gatheringPos.position;
         
         public void RemoveItem()

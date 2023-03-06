@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Text;
+using Controllers.Audio;
 using Data.Data;
 using Data.Events;
+using Game_Manager;
 using GameplayAssets.Items;
 using UnityEngine;
 
@@ -21,6 +23,7 @@ namespace Controllers.Item
         private Collider _childCollider;
         private Collider _collider;
         private GameplayData _gameplayData;
+        private AudioController _audioController;
 
         private EventSO _selectedEvent;
         private EventSO _returnedEvent;
@@ -72,6 +75,7 @@ namespace Controllers.Item
             _playCollectParticleEvent = itemsSetting.GetPlayCollectParticleEvent;
             _gameplayData = itemsSetting.GetGamePlayData;
             _selectOffset = itemsSetting.GetSelectOffset;
+            _audioController = GameManager.Instance.GetAudioController;
         }
 
         private void OnMouseDown() => _mouseBeginPos = Input.mousePosition;
@@ -97,7 +101,11 @@ namespace Controllers.Item
 
         private void Select()
         {
-            if(_gatheringPos) return;
+            if (_gatheringPos)
+            {
+                PlayWrongSound();
+                return;
+            }
         
             
             if (!_isSelected)
@@ -110,10 +118,15 @@ namespace Controllers.Item
             else
             {
                 _isSelected = false;
+                PlayReturnSound();
                 StartCoroutine(BackFromBasket());
             }
         }
         
+        private void PlayCollectSound() => _audioController.CollectObject();
+        private void PlayWrongSound() => _audioController.WrongClickObject();
+        private void PlayReturnSound() => _audioController.ReturnObject();
+
         private void EndDrag()
         {
             EnableChildCollider();
@@ -127,7 +140,13 @@ namespace Controllers.Item
         
         private void CheckCanMove()
         {
-            if (!_gameplayData.SelectedItemValidation) return;
+            if (!_gameplayData.SelectedItemValidation)
+            {
+                PlayWrongSound();
+                return;
+            }
+            
+            PlayCollectSound();
             Move();
         }
         

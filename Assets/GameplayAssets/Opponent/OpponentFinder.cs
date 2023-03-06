@@ -1,4 +1,5 @@
 using System;
+using Controllers.Audio;
 using Data.Data;
 using Game_Manager;
 using TMPro;
@@ -24,6 +25,7 @@ namespace GameplayAssets.Opponent
 
         private PlayerInfo _playerInfo;
         private PlayerInfo _opponentInfo;
+        private AudioController _audioController;
 
 
         private void Start()
@@ -40,6 +42,7 @@ namespace GameplayAssets.Opponent
             
             _playerInfo = GameManager.Instance.GetPlayerInfo;
             _opponentInfo = GameManager.Instance.GetOpponentInfo;
+            _audioController = GameManager.Instance.GetAudioController;
         }
 
 
@@ -96,6 +99,7 @@ namespace GameplayAssets.Opponent
         {
             loadingImage.SetActive(false);
             opponentUI.SetActive(true);
+            _audioController.FindOpponent();    
         }
     }
 
