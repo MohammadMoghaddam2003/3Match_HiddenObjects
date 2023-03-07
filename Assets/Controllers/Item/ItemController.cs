@@ -94,7 +94,7 @@ namespace Controllers.Item
         private void OnMouseUp()
         {
             if (Vector3.Distance(Input.mousePosition,_mouseBeginPos) < _selectOffset && !_drag) Select();
-            else EndDrag();
+            else if(!_isSelected) EndDrag();
             
             ResetChildRotation();
         }
@@ -262,7 +262,7 @@ namespace Controllers.Item
             ApplyGravity();
             _rigidbody.AddForce(-Vector3.forward * _backToSceneForce);
 
-            yield return new WaitForSeconds(.3f);
+            yield return new WaitForSeconds(.23f);
             EnableCollider();
         }
         
