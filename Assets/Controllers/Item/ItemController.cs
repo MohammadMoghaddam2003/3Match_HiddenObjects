@@ -290,5 +290,14 @@ namespace Controllers.Item
             StopAllCoroutines();
             StartCoroutine(MoveToTargetPos(_gameplayData.GatheringPos));
         }
+
+
+        public void Disabler()
+        {
+            _rigidbody.isKinematic = true;
+            _childCollider.enabled = false;
+            _collider.enabled = false;
+            this.enabled = false;  
+        } 
     }
 }

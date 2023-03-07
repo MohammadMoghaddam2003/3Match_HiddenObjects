@@ -1,3 +1,4 @@
+using System.Collections;
 using Controllers.Audio;
 using Controllers.UI;
 using Data.Events;
@@ -50,7 +51,7 @@ namespace Controllers.Level
             playerLose.Raise();
             _audioController.StopMusic();
             _audioController.LoseSound();
-            StopTime();
+            StartCoroutine(StopTime());
         }
 
         public void PlayerWin()
@@ -58,12 +59,18 @@ namespace Controllers.Level
             playerWin.Raise();
             _audioController.StopMusic();
             _audioController.WinSound();
-            StopTime();
+           StartCoroutine( StopTime());
         }
 
 
         private void StartTime() => Time.timeScale = 1;
-        private void StopTime() => Time.timeScale = 0;
+        
+
+        private IEnumerator StopTime()   
+        {
+            yield return new WaitForSeconds(5);
+            Time.timeScale = 0;
+        }
 
 
     }

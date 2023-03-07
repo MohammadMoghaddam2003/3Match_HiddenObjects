@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Controllers.UI;
 using UnityEngine;
@@ -12,11 +11,11 @@ namespace GameplayAssets.Opponent
         [SerializeField] private int minSecond = 3;
         [SerializeField] private int maxSecond = 15;
 
+        private Coroutine _aiSimulate;
 
-        private void Start()
-        {
-            StartCoroutine(AISimulate());
-        }
+
+        private void Start() => _aiSimulate = StartCoroutine(AISimulate());
+        
 
 
         private IEnumerator AISimulate()
@@ -27,6 +26,13 @@ namespace GameplayAssets.Opponent
             uIController.ChangeOpponentStarSprite();
             StartCoroutine(AISimulate());
         }
+
+        public void Disabler()
+        {
+            StopCoroutine(_aiSimulate);
+            this.enabled = false;  
+        } 
+
         
     }
 }

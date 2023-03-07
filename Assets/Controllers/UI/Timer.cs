@@ -34,5 +34,8 @@ namespace Controllers.UI
          
          timerText.text = $"{time:00}:{_second:00}";
       }
+      
+      
+      public void Disabler() => this.enabled = false;
    }
 }
