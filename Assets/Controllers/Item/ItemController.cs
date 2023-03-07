@@ -41,6 +41,7 @@ namespace Controllers.Item
         private float _resetRotationSpeed;
         private float _backToSceneForce;
         private float _selectOffset;
+        private float _touchDistance;
 
         private bool _drag;
         private bool _isSelected;
@@ -82,7 +83,9 @@ namespace Controllers.Item
 
         private void OnMouseDrag()
         {
-            if(Vector3.Distance(Input.mousePosition,_mouseBeginPos) < _selectOffset || _isSelected) return;
+            _touchDistance  = Vector3.Distance(Input.mousePosition, _mouseBeginPos) / Screen.dpi; 
+
+            if(_touchDistance < _selectOffset || _isSelected) return;
         
             RemoveGravity();
             FingerMoving();
@@ -93,7 +96,7 @@ namespace Controllers.Item
 
         private void OnMouseUp()
         {
-            if (Vector3.Distance(Input.mousePosition,_mouseBeginPos) < _selectOffset && !_drag) Select();
+            if (_touchDistance < _selectOffset && !_drag) Select();
             else if(!_isSelected) EndDrag();
             
             ResetChildRotation();

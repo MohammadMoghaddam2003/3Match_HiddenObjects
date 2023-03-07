@@ -20,7 +20,7 @@ MonoBehaviour:
   rotateSpeed: 20
   resetRotationSpeed: 10
   backToSceneForce: 300
-  selectOffset: 2
+  selectOffset: 0.45
   selectedEvent: {fileID: 11400000, guid: c2ae8d85ffa2c8d4b91943b141430383, type: 2}
   returnedEvent: {fileID: 11400000, guid: d8764ceb14408b84a8be2c290775a7ab, type: 2}
   arriveToTargetEvent: {fileID: 11400000, guid: a84cff02888323341bb177b53d08b81e,
