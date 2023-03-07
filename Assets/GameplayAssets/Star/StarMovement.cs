@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Controllers.UI;
 using UnityEngine;
@@ -45,15 +44,16 @@ namespace GameplayAssets.Star
             _image.enabled = true;
             float distance = 1;
             Vector3 position;
+            Vector3 direction;
             
             while (distance > .0013f)
             {
                 position = transform.position;
                 
                 distance = Vector3.Distance(new Vector3(position.x, 0, position.z),
-                    new Vector3(_targetPos.x, 0, _targetPos.z)) / Screen.dpi;
+                    new Vector3(_targetPos.x, 0, _targetPos.z)) / 100;
 
-                Vector3 direction = _targetPos-position;
+                direction = _targetPos - position;
                 ChangeScale();
                 _rigidbody.velocity =  (direction.normalized * speed) * Time.deltaTime;
                 yield return null;

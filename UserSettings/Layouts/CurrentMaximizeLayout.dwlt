@@ -56,12 +56,12 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.GameView
   m_SerializedViewValues:
-  - E:\FreeStateGames\3Match_HiddenObjects\Library\PlayModeViewStates\3703db833c65003499dd45defda2ba53
+  - E:\FreeStateGames\3Match_HiddenObjects\Library\PlayModeViewStates\b6f3321751196a44695ca4e0e9fe802f
   m_PlayModeViewName: Device Simulator
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 1080, y: 1920}
+  m_TargetSize: {x: 1440, y: 2560}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -77,11 +77,11 @@ MonoBehaviour:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     pluginStates:
     - '{}'
-    scale: 22
+    scale: 17
     fitToScreenEnabled: 1
     rotationDegree: 0
     highlightSafeAreaEnabled: 0
-    friendlyName: Xiaomi Mi 5
+    friendlyName: Xiaomi Mi Note Pro
     networkReachability: 1
     systemLanguage: 10
 --- !u!114 &3
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.15574302, y: -0.58517, z: -0.119318284, w: -0.7871231}
     speed: 2
-    m_Value: {x: 0.15570569, y: -0.5850297, z: -0.11928969, w: -0.78693444}
+    m_Value: {x: -0.15574302, y: 0.58517, z: 0.119318284, w: 0.7871231}
   m_Size:
     m_Target: 5.5602818
     speed: 2
@@ -771,21 +771,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GameplayAssets/Star/Prefab
+    - Assets/GameplayAssets/Star
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/GameplayAssets/Star/Prefab
+  - Assets/GameplayAssets/Star
   m_LastFoldersGridSize: 56
   m_LastProjectPath: E:\FreeStateGames\3Match_HiddenObjects
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 478.2}
-    m_SelectedIDs: 5c6d0000
-    m_LastClickedID: 27996
+    m_SelectedIDs: 066d0000
+    m_LastClickedID: 27910
     m_ExpandedIDs: 00000000ee6c0000f06c0000f26c0000f46c0000f66c0000f86c0000fa6c0000fc6c0000fe6c0000006d0000026d0000046d0000066d0000086d00000a6d00000c6d00000e6d0000106d00002e6d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
