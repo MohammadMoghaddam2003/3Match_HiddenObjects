@@ -176,7 +176,7 @@ namespace Controllers.Item
         {    
             RemoveGravity();
         
-            while (Vector3.Distance(transform.position , target) > .15f)
+            while (Vector3.Distance(transform.position , target) > .25f)
             {
                 transform.position = Vector3.Lerp(transform.position, target, _moveSpeed * Time.fixedDeltaTime);
                 yield return new WaitForSeconds(Time.fixedDeltaTime);

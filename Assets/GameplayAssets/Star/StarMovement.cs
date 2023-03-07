@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Controllers.UI;
 using UnityEngine;
@@ -11,9 +12,9 @@ namespace GameplayAssets.Star
         [SerializeField] private Vector3 defaultRotation;
         [SerializeField] private float speed = 20;
         [SerializeField] private float waitTime = .3f;
-    
 
-        
+
+        private Rigidbody _rigidbody;
         private Coroutine _move;
         private UIController _uiController;
         private Image _image;
@@ -23,6 +24,10 @@ namespace GameplayAssets.Star
         public UIController SetUIController { set => _uiController = value; }
 
 
+        private void Awake()
+        {
+            _rigidbody = GetComponent<Rigidbody>();
+        }
 
         public void StartMove()
         {
@@ -38,12 +43,19 @@ namespace GameplayAssets.Star
             _targetScale = _uiController.GetTargetScale;
             yield return new WaitForSeconds(waitTime);
             _image.enabled = true;
-
-            while (Vector3.Distance(new Vector3( transform.position.x,0 ,  transform.position.z),new Vector3(_targetPos.x,0,_targetPos.z)) >.45f)
+            float distance = 1;
+            Vector3 position;
+            
+            while (distance > .0013f)
             {
-                Vector3 direction = _targetPos-transform.position;
+                position = transform.position;
+                
+                distance = Vector3.Distance(new Vector3(position.x, 0, position.z),
+                    new Vector3(_targetPos.x, 0, _targetPos.z)) / Screen.dpi;
+
+                Vector3 direction = _targetPos-position;
                 ChangeScale();
-                transform.Translate( (direction.normalized * speed) * Time.deltaTime);
+                _rigidbody.velocity =  (direction.normalized * speed) * Time.deltaTime;
                 yield return null;
             }
             
