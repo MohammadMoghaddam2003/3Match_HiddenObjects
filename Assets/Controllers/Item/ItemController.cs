@@ -83,7 +83,7 @@ namespace Controllers.Item
 
         private void OnMouseDrag()
         {
-            _touchDistance  = Vector3.Distance(Input.mousePosition, _mouseBeginPos) / Screen.dpi; 
+            _touchDistance  = Vector3.Distance(Input.mousePosition, _mouseBeginPos) / 100; 
 
             if(_touchDistance < _selectOffset || _isSelected) return;
         
