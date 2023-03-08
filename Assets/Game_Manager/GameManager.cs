@@ -1,3 +1,4 @@
+using System;
 using Controllers.Audio;
 using Controllers.Data;
 using Controllers.Level;
@@ -16,8 +17,10 @@ namespace Game_Manager
 
         
         public static GameManager Instance;
-        
-        
+
+
+        private void Awake() => DontDestroyOnLoad(this.gameObject);
+
         public SceneLoader GetSceneLoader { get => sceneLoader; }
         public LevelController GetLevelController { get => levelController; }
         public PlayerInfo GetPlayerInfo { get => dataController.GetPlayerInfo; }
