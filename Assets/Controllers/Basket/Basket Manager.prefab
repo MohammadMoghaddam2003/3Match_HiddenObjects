@@ -62,13 +62,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventListenerHandler:
+  eventListenerHandler:
   - eventSO: {fileID: 11400000, guid: c2ae8d85ffa2c8d4b91943b141430383, type: 2}
     reponse:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 7179403660952644496}
-          m_TargetAssemblyTypeName: Gameplay_Assets.Basket.BasketManager, Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Basket.BasketManager, Assembly-CSharp
           m_MethodName: PrepareBasket
           m_Mode: 1
           m_Arguments:
@@ -84,24 +84,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 7179403660952644496}
-          m_TargetAssemblyTypeName: Gameplay_Assets.Basket.BasketManager, Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Basket.BasketManager, Assembly-CSharp
           m_MethodName: BasketUnUse
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventSO: {fileID: 11400000, guid: a84cff02888323341bb177b53d08b81e, type: 2}
-    reponse:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 7179403660952644496}
-          m_TargetAssemblyTypeName: Gameplay_Assets.Basket.BasketManager, Assembly-CSharp
-          m_MethodName: BasketUsed
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -116,7 +100,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 7179403660952644496}
-          m_TargetAssemblyTypeName: Gameplay_Assets.Basket.BasketManager, Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Basket.BasketManager, Assembly-CSharp
           m_MethodName: ClearBasketsUsing
           m_Mode: 1
           m_Arguments:

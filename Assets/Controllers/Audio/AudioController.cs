@@ -27,7 +27,6 @@ namespace Controllers.Audio
         {
             _musicAudioSource = GetComponent<AudioSource>();
             _musicAudioSource.clip = music;
-            DontDestroyOnLoad(this);
         }
             
 

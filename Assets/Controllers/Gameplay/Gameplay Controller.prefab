@@ -46,10 +46,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gatheringPos: {fileID: 0}
+  canvas: {fileID: 0}
+  starInitialPos: {fileID: 0}
   starsPos: []
   collectParticleSystem: {fileID: 0}
   gameplayData: {fileID: 11400000, guid: 75ef377627f6c464bbfe7651fa62f032, type: 2}
   completeItemEvent: {fileID: 11400000, guid: 9416fefe5de25264197f6cd5ebafbb57, type: 2}
+  star: {fileID: 2926916019857236570, guid: 9873681d06b37e94298863c5ae9575d0, type: 3}
+  uIController: {fileID: 0}
   maxStarsCount: 9
 --- !u!114 &7436137422576754117
 MonoBehaviour:
@@ -63,13 +67,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventListenerHandler:
+  eventListenerHandler:
   - eventSO: {fileID: 11400000, guid: c2ae8d85ffa2c8d4b91943b141430383, type: 2}
     reponse:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 8721449579684005081}
-          m_TargetAssemblyTypeName: GameplayController, Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Gameplay.GameplayController, Assembly-CSharp
           m_MethodName: SelectedItem
           m_Mode: 1
           m_Arguments:
@@ -85,7 +89,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 8721449579684005081}
-          m_TargetAssemblyTypeName: GameplayController, Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Gameplay.GameplayController, Assembly-CSharp
           m_MethodName: RemoveItem
           m_Mode: 1
           m_Arguments:
@@ -101,8 +105,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 8721449579684005081}
-          m_TargetAssemblyTypeName: Gameplay_Assets.Gameplay_Controller.GameplayController,
-            Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Gameplay.GameplayController, Assembly-CSharp
           m_MethodName: CheckBasket
           m_Mode: 1
           m_Arguments:
@@ -118,8 +121,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 8721449579684005081}
-          m_TargetAssemblyTypeName: Gameplay_Assets.Gameplay_Controller.GameplayController,
-            Assembly-CSharp
+          m_TargetAssemblyTypeName: Controllers.Gameplay.GameplayController, Assembly-CSharp
           m_MethodName: PlayCollectParticleManager
           m_Mode: 1
           m_Arguments:

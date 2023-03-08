@@ -2,7 +2,7 @@ using System.Collections;
 using Controllers.Audio;
 using Controllers.UI;
 using Data.Events;
-using Scene_Loader;
+using Scene.Scene_Loader;
 using Game_Manager;
 using UnityEngine;
 
@@ -18,8 +18,6 @@ namespace Controllers.Level
         private AudioController _audioController;
         
         
-        
-        private void Awake() => DontDestroyOnLoad(this.gameObject);
 
         private void Start()
         {

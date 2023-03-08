@@ -2,7 +2,7 @@ using Controllers.Audio;
 using Controllers.Data;
 using Controllers.Level;
 using Data.Data;
-using Scene_Loader;
+using Scene.Scene_Loader;
 using UnityEngine;
 
 namespace Game_Manager
@@ -30,8 +30,6 @@ namespace Game_Manager
         protected GameManager() { }
         
         
-        private void Awake() => DontDestroyOnLoad(this.gameObject);
-
         private void OnEnable()
         {
             if(Instance is null) Instance = this;

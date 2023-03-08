@@ -1,15 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Scene_Loader
+namespace Scene.Scene_Loader
 {
    public class SceneLoader : MonoBehaviour
    {
-      private void Awake() => DontDestroyOnLoad(this.gameObject);
-      
 
-
-      
       public void LoadMenuScene() => SceneManager.LoadSceneAsync(0);
       
    

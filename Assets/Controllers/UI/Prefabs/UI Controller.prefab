@@ -71,6 +71,10 @@ MonoBehaviour:
   opponentUsername: {fileID: 0}
   losePanel: {fileID: 0}
   winPanel: {fileID: 0}
+  particleSystems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playAgainEvent: {fileID: 11400000, guid: 3b7750cbcbeab3e46b15004bcd4c7bbb, type: 2}
   goStartEvent: {fileID: 11400000, guid: 2c9b70ac3f58ec34f882971630999bf5, type: 2}
 --- !u!114 &1570674200651614031
