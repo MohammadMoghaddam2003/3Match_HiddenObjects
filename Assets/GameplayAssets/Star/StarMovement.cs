@@ -43,6 +43,7 @@ namespace GameplayAssets.Star
             yield return new WaitForSeconds(waitTime);
             _image.enabled = true;
             float distance = 1;
+            speed *= Camera.main.aspect;
             Vector3 position;
             Vector3 direction;
             

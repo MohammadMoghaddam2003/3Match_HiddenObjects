@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultScale: {x: 1.2, y: 1.2, z: 1.2}
   defaultRotation: {x: 0, y: 0, z: 0}
-  speed: 1200
+  speed: 3000
   waitTime: 0.3
 --- !u!54 &-6850517143991111268
 Rigidbody:
