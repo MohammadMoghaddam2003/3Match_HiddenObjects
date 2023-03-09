@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Avatar_CircleMask (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Pivot.x
@@ -246,6 +251,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 9a5c3e55e035de24aab2ba11817ca969,
         type: 3}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -346,7 +356,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &192348501
 RectTransform:
@@ -416,7 +426,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &202313452
 RectTransform:
@@ -508,7 +518,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &259970525
 RectTransform:
@@ -584,7 +594,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &340145585
 RectTransform:
@@ -623,7 +633,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &377887696
 RectTransform:
@@ -885,6 +895,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player User Name
       objectReference: {fileID: 0}
+    - target: {fileID: 319072131442301166, guid: 8fef3d4c365c2d341b952bd233411903,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fef3d4c365c2d341b952bd233411903, type: 3}
 --- !u!224 &383033967 stripped
@@ -904,6 +919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Avatar_CircleMask (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1016,6 +1036,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a63adc5a08a8ca3488f91930f22ebb41,
         type: 3}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -1100,6 +1125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Avatar_CircleMask (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1212,6 +1242,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 67a017c3dbf8ae648a0ad0f1dae3ee69,
         type: 3}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -1314,7 +1349,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &683918324
 RectTransform:
@@ -1480,7 +1515,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &719320065
 RectTransform:
@@ -1642,6 +1677,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text (TMP)
       objectReference: {fileID: 0}
+    - target: {fileID: 319072131442301166, guid: 8fef3d4c365c2d341b952bd233411903,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fef3d4c365c2d341b952bd233411903, type: 3}
 --- !u!224 &756565333 stripped
@@ -1666,7 +1706,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &847740062
 RectTransform:
@@ -1737,6 +1777,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Avatar_CircleMask (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1849,6 +1894,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 2b4ae23a3188c8c42b7d11705a9d3c4e,
         type: 3}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -1945,6 +1995,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Avatar_CircleMask (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -2057,6 +2112,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 453f5c21c78c92140840e5fe1689d2cc,
         type: 3}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -2147,7 +2207,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1049924093
 RectTransform:
@@ -2293,6 +2353,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Avatar_CircleMask (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2404,6 +2469,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6b7adfdb648c13049af24598c755e6eb,
         type: 3}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -2492,7 +2562,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1183139697
 RectTransform:
@@ -2541,6 +2611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Avatar_CircleMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -2647,6 +2722,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334113b0d1f66f24296264625f5fe157, type: 3}
 --- !u!1 &1195672977
@@ -2666,7 +2746,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1195672978
 RectTransform:
@@ -2866,7 +2946,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1207359357
 RectTransform:
@@ -2981,7 +3061,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!224 &1295394787
 RectTransform:
@@ -3083,7 +3163,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1313224824
 MonoBehaviour:
@@ -3151,7 +3231,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1368269331
 RectTransform:
@@ -3228,7 +3308,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1412680890
 RectTransform:
@@ -3399,6 +3479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Avatar_CircleMask (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3510,6 +3595,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 778d41044bc292546a7233bce1d8d60c,
         type: 3}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
@@ -3597,7 +3687,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1579892305
 RectTransform:
@@ -3638,7 +3728,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1690219244
 RectTransform:
@@ -3784,7 +3874,7 @@ GameObject:
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!81 &1738262027
 AudioListener:
@@ -4022,6 +4112,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text
       objectReference: {fileID: 0}
+    - target: {fileID: 319072131442301166, guid: 8fef3d4c365c2d341b952bd233411903,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fef3d4c365c2d341b952bd233411903, type: 3}
 --- !u!224 &1746842712 stripped
@@ -4191,6 +4286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text
       objectReference: {fileID: 0}
+    - target: {fileID: 319072131442301166, guid: 8fef3d4c365c2d341b952bd233411903,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fef3d4c365c2d341b952bd233411903, type: 3}
 --- !u!224 &1820470630 stripped
@@ -4216,7 +4316,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1887193838
 MonoBehaviour:
@@ -4316,7 +4416,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &1993516348
 RectTransform:
@@ -4356,7 +4456,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2141284660
 RectTransform:
@@ -4548,6 +4648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text (TMP)
       objectReference: {fileID: 0}
+    - target: {fileID: 319072131442301166, guid: 8fef3d4c365c2d341b952bd233411903,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fef3d4c365c2d341b952bd233411903, type: 3}
 --- !u!1001 &1048557250968147085
@@ -4630,6 +4735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Avatar_CircleMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520564098951756230, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2520564098951756231, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -4735,6 +4845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520564100826438758, guid: 334113b0d1f66f24296264625f5fe157,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -4880,16 +4995,5 @@ PrefabInstance:
       propertyPath: signinMenu
       value: 
       objectReference: {fileID: 1295394786}
-    - target: {fileID: 3045384020295983381, guid: 2fc2f6f5dddc79c4fa2a9fc195dd6c8a,
-        type: 3}
-      propertyPath: loadingPage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3045384020295983381, guid: 2fc2f6f5dddc79c4fa2a9fc195dd6c8a,
-        type: 3}
-      propertyPath: audioController
-      value: 
-      objectReference: {fileID: 11400000, guid: 80b40c97397900c498964eac1ed52eb5,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fc2f6f5dddc79c4fa2a9fc195dd6c8a, type: 3}

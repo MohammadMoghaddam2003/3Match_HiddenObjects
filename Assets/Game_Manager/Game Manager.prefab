@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8961363186225698082
 Transform:
@@ -62,6 +62,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scene Loader
+      objectReference: {fileID: 0}
+    - target: {fileID: 4401739056029698840, guid: ca44a56a208f1b44ab7299a267c0219b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4401739056029698842, guid: ca44a56a208f1b44ab7299a267c0219b,
         type: 3}
@@ -205,6 +210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 1731809722147717948, guid: 415eaf9c81f153e4ab84be5541fb5b74,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 415eaf9c81f153e4ab84be5541fb5b74, type: 3}
 --- !u!4 &1048557250397603184 stripped
@@ -283,6 +293,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8961363186225698082}
     m_Modifications:
+    - target: {fileID: 253622894492279045, guid: ef84f4702b8214e46b890988bc80bca0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3664141657312733945, guid: ef84f4702b8214e46b890988bc80bca0,
         type: 3}
       propertyPath: m_RootOrder
@@ -342,6 +357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Audio Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664141657312733950, guid: ef84f4702b8214e46b890988bc80bca0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef84f4702b8214e46b890988bc80bca0, type: 3}
