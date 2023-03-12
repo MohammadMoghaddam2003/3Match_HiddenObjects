@@ -280,7 +280,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -294,7 +294,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -304,7 +304,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1065,7 +1065,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1079,7 +1079,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1089,7 +1089,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1271,7 +1271,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1285,7 +1285,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1295,7 +1295,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1923,7 +1923,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1937,7 +1937,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -1947,7 +1947,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -2141,7 +2141,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -2155,7 +2155,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -2165,7 +2165,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -2498,7 +2498,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -2512,7 +2512,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -2522,7 +2522,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -2837,9 +2837,9 @@ MonoBehaviour:
   m_OnSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1768679299}
-        m_TargetAssemblyTypeName: Controllers.Audio.AudioController, Assembly-CSharp
-        m_MethodName: Click
+      - m_Target: {fileID: 1123724316}
+        m_TargetAssemblyTypeName: GameplayAssets.Menu.MenuController, Assembly-CSharp
+        m_MethodName: PlayClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3376,20 +3376,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1123724316}
-        m_TargetAssemblyTypeName: Menu.Scripts.MenuController, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameplayAssets.Menu.MenuController, Assembly-CSharp
         m_MethodName: GoSigninMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1768679299}
-        m_TargetAssemblyTypeName: Controllers.Audio.AudioController, Assembly-CSharp
-        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3624,7 +3612,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -3638,7 +3626,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -3648,7 +3636,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -4875,7 +4863,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1768679299}
+      objectReference: {fileID: 1123724316}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -4889,7 +4877,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayClickSound
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
@@ -4899,7 +4887,7 @@ PrefabInstance:
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Controllers.Audio.AudioController, Assembly-CSharp
+      value: GameplayAssets.Menu.MenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4869942513376227130, guid: 334113b0d1f66f24296264625f5fe157,
         type: 3}
