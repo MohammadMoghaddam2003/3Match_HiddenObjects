@@ -58,7 +58,7 @@ namespace GameplayAssets.Items
             _itemChildRotation = transform.GetChild(0).GetComponent<ItemChildRotation>();
             _itemChildCollider = transform.GetChild(0).GetComponent<ItemChildCollider>();
 
-            
+            _isSelected = false;
             _rotateDirection = itemsSetting.GetRotateDirection;
             _height = itemsSetting.GetHeight;
             _moveSpeed = itemsSetting.GetMoveSpeed;
