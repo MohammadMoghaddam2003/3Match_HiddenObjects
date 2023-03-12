@@ -1,5 +1,7 @@
 using System.Collections;
 using Data.Events;
+using Game_Manager;
+using GameplayAssets.Audio;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,6 +38,7 @@ namespace GameplayAssets.UI
 
 
         private PlayerUIController _playerUIController;
+        private AudioController _audioController;
         private OpponentUIController _opponentUIController;
 
 
@@ -55,6 +58,8 @@ namespace GameplayAssets.UI
         {
           winPanel.SetActive(false);
           losePanel.SetActive(false);
+
+          _audioController = GameManager.Instance.GetAudioController;
         }
         
         public void ChangePlayerStarSprite() => _playerUIController.ChangeCollectedStarSprite();
@@ -65,11 +70,9 @@ namespace GameplayAssets.UI
         {
             winPanel.SetActive(true);
             StartCoroutine(PlayParticles());
-        } 
-        
-        
+        }
+
         public void ShowLosePanel() => losePanel.SetActive(true);
-        
         
         public void PlayAgain() => playAgainEvent.Raise();
         
@@ -79,7 +82,6 @@ namespace GameplayAssets.UI
         
         public Vector3 GetTargetScale { get => playerStars[0].transform.localScale; }
         
-
         public void GoStart() => goStartEvent.Raise();
 
         private IEnumerator PlayParticles()
@@ -90,6 +92,7 @@ namespace GameplayAssets.UI
                 particleSystems[i].SetActive(true);
             }
         }
-        
+
+        public void PlayClickSound() => _audioController.Click();
     }
 }
