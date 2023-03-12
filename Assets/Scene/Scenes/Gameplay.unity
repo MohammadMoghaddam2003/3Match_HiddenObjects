@@ -13716,11 +13716,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
         type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1082498501}
-    - target: {fileID: 8721449579684005081, guid: c573558f14d0ec54bb63125cdffe7418,
-        type: 3}
       propertyPath: objectPool
       value: 
       objectReference: {fileID: 412125259}

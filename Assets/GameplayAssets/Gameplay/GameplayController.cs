@@ -8,6 +8,7 @@ using GameData.Data;
 using Game_Manager;
 using GameplayAssets.Object_Pool;
 using GameplayAssets.Star;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameplayAssets.Gameplay
@@ -158,6 +159,8 @@ namespace GameplayAssets.Gameplay
             gameplayData.ItemTarget = Vector3.zero;
             gameplayData.GatheringPos = Vector3.zero;
         }
+
+        public void Disabler() => gameObject.SetActive(false);
     }
     
     public delegate void CompleteCollection();

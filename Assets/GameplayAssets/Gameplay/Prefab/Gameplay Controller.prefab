@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8531284501422600701}
   - component: {fileID: 8721449579684005081}
+  - component: {fileID: 2521984858699021220}
   m_Layer: 0
   m_Name: Gameplay Controller
   m_TagString: Untagged
@@ -45,11 +46,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gatheringPos: {fileID: 0}
-  canvas: {fileID: 0}
   collectParticleSystem: {fileID: 0}
   gameplayData: {fileID: 11400000, guid: 75ef377627f6c464bbfe7651fa62f032, type: 2}
   uIController: {fileID: 0}
   basketManager: {fileID: 0}
-  star: {fileID: 2926916019857236570, guid: 9873681d06b37e94298863c5ae9575d0, type: 3}
+  objectPool: {fileID: 0}
   starInitialPos: {fileID: 0}
-  maxStarsCount: 9
+--- !u!114 &2521984858699021220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755516426925628531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventListenerHandler:
+  - eventSO: {fileID: 11400000, guid: 3d2dd48193e0c9a4bb1ccea3d2781f6d, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8721449579684005081}
+          m_TargetAssemblyTypeName: GameplayAssets.Gameplay.GameplayController, Assembly-CSharp
+          m_MethodName: Disabler
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventSO: {fileID: 11400000, guid: 96f52b047ac4c35499055c46b6f240d2, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8721449579684005081}
+          m_TargetAssemblyTypeName: GameplayAssets.Gameplay.GameplayController, Assembly-CSharp
+          m_MethodName: Disabler
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
