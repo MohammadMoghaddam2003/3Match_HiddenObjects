@@ -1,6 +1,6 @@
 using System;
-using Controllers.Audio;
-using Data.Data;
+using GameplayAssets.Audio;
+using GameData.Data;
 using Game_Manager;
 using TMPro;
 using UnityEngine;
@@ -11,6 +11,7 @@ namespace GameplayAssets.Opponent
 {
     public class OpponentFinder : MonoBehaviour
     {
+        [Header("UI Elements")]
         [SerializeField] private Image playerAvatar;
         [SerializeField] private Image opponentAvatar;
         [SerializeField] private Sprite[] maleAvatars;
@@ -19,6 +20,8 @@ namespace GameplayAssets.Opponent
         [SerializeField] private GameObject opponentUI;
         [SerializeField] private TextMeshProUGUI playerUsername;
         [SerializeField] private TextMeshProUGUI opponentUsername;
+        
+        [Header("Information")]
         [SerializeField] private String[] maleNames;
         [SerializeField] private String[] femaleNames;
 
@@ -44,14 +47,12 @@ namespace GameplayAssets.Opponent
             _opponentInfo = GameManager.Instance.GetOpponentInfo;
             _audioController = GameManager.Instance.GetAudioController;
         }
-
-
+        
         private void PlacementUIElements()
         {
             playerAvatar.sprite = _playerInfo.Avatar;
             playerUsername.text = _playerInfo.UserName;
         }
-
 
         private void FindOpponent()
         {
@@ -75,8 +76,7 @@ namespace GameplayAssets.Opponent
             
             SetOpponentData();
         }
-
-
+        
         private PlayersGender RandomGender()
         {
             int randomGender = Random.Range(1, 3);
@@ -85,15 +85,11 @@ namespace GameplayAssets.Opponent
             return PlayersGender.Female; 
         }
 
-
-        
         private void SetOpponentData()
         {
             _opponentInfo.Avatar = opponentAvatar.sprite;
             _opponentInfo.UserName = opponentUsername.text;
         }
-
-        
         
         public void ShowOpponent()
         {

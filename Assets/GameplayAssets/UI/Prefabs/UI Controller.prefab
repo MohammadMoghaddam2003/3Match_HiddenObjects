@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2765150324209376358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2765150324209376356}
+  - component: {fileID: 2765150324209376359}
+  - component: {fileID: 1570674200651614031}
+  m_Layer: 0
+  m_Name: UI Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &2765150324209376356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2765150324209376358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02561516, y: -8.731372, z: 2.720403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2765150324209376359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2765150324209376358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd3b391dc5faef45a7263cabdbf7ad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameplayController: {fileID: 0}
+  playerAvatar: {fileID: 0}
+  opponentAvatar: {fileID: 0}
+  playerStars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  opponentStars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  collectedStarSprite: {fileID: 21300000, guid: 64f8eb4a25fe643169785ba4aef65d43,
+    type: 3}
+  playerUsername: {fileID: 0}
+  opponentUsername: {fileID: 0}
+  particleSystems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  losePanel: {fileID: 0}
+  winPanel: {fileID: 0}
+  playAgainEvent: {fileID: 11400000, guid: 3b7750cbcbeab3e46b15004bcd4c7bbb, type: 2}
+  goStartEvent: {fileID: 11400000, guid: 2c9b70ac3f58ec34f882971630999bf5, type: 2}
+--- !u!114 &1570674200651614031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2765150324209376358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6974a298349463f4aba2bd2c3ab23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventListenerHandler:
+  - eventSO: {fileID: 11400000, guid: 3d2dd48193e0c9a4bb1ccea3d2781f6d, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2765150324209376359}
+          m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
+          m_MethodName: ShowWinPanel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventSO: {fileID: 11400000, guid: 96f52b047ac4c35499055c46b6f240d2, type: 2}
+    reponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2765150324209376359}
+          m_TargetAssemblyTypeName: Controllers.UI.UIController, Assembly-CSharp
+          m_MethodName: ShowLosePanel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

@@ -1,5 +1,4 @@
-using Data.Data;
-using Data.Events;
+using GameData.Data;
 using UnityEngine;
 
 namespace GameplayAssets.Items
@@ -20,13 +19,7 @@ namespace GameplayAssets.Items
       [SerializeField] private float backToSceneForce = 2000;
       [SerializeField] private float selectOffset = 2;
 
-      [Header("Events")]
-      [SerializeField] private EventSO selectedEvent;
-      [SerializeField] private EventSO returnedEvent;
-      [SerializeField] private EventSO arriveToTargetEvent;
-      [SerializeField] private EventSO playCollectParticleEvent;
-      
-      
+
 
       public Vector3 GetRotateDirection
       {
@@ -37,14 +30,6 @@ namespace GameplayAssets.Items
             return rotateDirection = new Vector3(0, 0, 1);
          }
       }
-   
-      public EventSO GetSelectedEvent { get => selectedEvent; }
-   
-      public EventSO GetReturnedEvent { get => returnedEvent; }
-   
-      public EventSO GetArriveToTargetEvent { get => arriveToTargetEvent; }
-      
-      public EventSO GetPlayCollectParticleEvent { get => playCollectParticleEvent; }
       
       public GameplayData GetGamePlayData { get => gameplayData; }
 

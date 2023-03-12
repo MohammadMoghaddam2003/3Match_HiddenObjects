@@ -1,5 +1,6 @@
 using System.Collections;
-using Controllers.UI;
+using GameplayAssets.Object_Pool;
+using GameplayAssets.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,26 +17,31 @@ namespace GameplayAssets.Star
         private Rigidbody _rigidbody;
         private Coroutine _move;
         private UIController _uiController;
+        private ObjectPool _objectPool;
         private Image _image;
         private Vector3 _targetPos;
         private Vector3 _targetScale;
+        
+        
 
         public UIController SetUIController { set => _uiController = value; }
-
+        
+        public ObjectPool SetObjectPool { set => _objectPool = value; }
 
         private void Awake()
         {
+            speed *= Camera.main.aspect;
             _rigidbody = GetComponent<Rigidbody>();
-        }
-
+        } 
+        
         public void StartMove()
         {
             _image = GetComponent<Image>();
             _image.enabled = false;
+            
             _move = StartCoroutine(Move());
         } 
-
-
+        
         private IEnumerator Move()
         {
             _targetPos = _uiController.GetPlayerStar;
@@ -43,7 +49,6 @@ namespace GameplayAssets.Star
             yield return new WaitForSeconds(waitTime);
             _image.enabled = true;
             float distance = 1;
-            speed *= Camera.main.aspect;
             Vector3 position;
             Vector3 direction;
             
@@ -59,15 +64,14 @@ namespace GameplayAssets.Star
                 _rigidbody.velocity =  (direction.normalized * speed) * Time.deltaTime;
                 yield return null;
             }
-            
+
+            _rigidbody.velocity = Vector3.zero;
             _uiController.ChangePlayerStarSprite();
             StopCoroutine(_move);
-            gameObject.SetActive(false);
+            _objectPool.RecycleStar = gameObject;
         }
         
-        
         private void ChangeScale() => transform.localScale = Vector3.Lerp(transform.localScale,_targetScale,(speed * 10) * Time.deltaTime);
-
 
         public void SetDefault()
         {

@@ -209,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99236703}
   m_Layer: 5
-  m_Name: Find Opponent
+  m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,6 +246,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1669109807}
     m_Modifications:
+    - target: {fileID: 319072131442301138, guid: 8fef3d4c365c2d341b952bd233411903,
+        type: 3}
+      propertyPath: m_text
+      value: Loading ...
+      objectReference: {fileID: 0}
     - target: {fileID: 319072131442301138, guid: 8fef3d4c365c2d341b952bd233411903,
         type: 3}
       propertyPath: m_fontSize

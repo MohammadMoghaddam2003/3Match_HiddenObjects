@@ -1,8 +1,6 @@
-using System;
-using Controllers.Audio;
-using Controllers.Data;
-using Controllers.Level;
-using Data.Data;
+using GameplayAssets.Audio;
+using GameplayAssets.Level;
+using GameData.Data;
 using Scene.Scene_Loader;
 using UnityEngine;
 
@@ -25,17 +23,16 @@ namespace Game_Manager
         public LevelController GetLevelController { get => levelController; }
         public PlayerInfo GetPlayerInfo { get => dataController.GetPlayerInfo; }
         public PlayerInfo GetOpponentInfo { get => dataController.GetOpponentInfo; }
-        public GameplayData GetGameplayData { get => dataController.GetGameplayData; }
         public AudioController GetAudioController { get => audioController; }
 
 
 
-        protected GameManager() { }
-        
+        private GameManager() { }
         
         private void OnEnable()
         {
             if(Instance is null) Instance = this;
+            else Destroy(gameObject);
         }
     }
 }
